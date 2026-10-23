@@ -1,17 +1,17 @@
 [book]
 authors = ["lili"]
 language = "zh_CN"
-multilingual = false
 src = "src"
-title = "学习笔记"
+title = "阅读笔记"
+description = "阅读笔记"
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
 
 [output.html]
 theme = "mytheme"
-default-theme = "rust"
-git-repository-url = "https://github.com/xiaozhiliaoo/mdbook"
+default-theme = "light" #  light、rust、coal、navy
+git-repository-url = "https://github.com/xiaozhiliaoo/reading-note-2026"
 additional-js = ["mermaid.min.js", "mermaid-init.js", "smart-anchor.js"]
 mathjax-support = true
 
@@ -19,16 +19,13 @@ mathjax-support = true
 editable = true
 copy-js = true
 
-
-# 用来控制文章列表的展开
 [output.html.fold]
 enable = true
 level = 0
 
-
 [preprocessor.rss]
 files-glob = "chapter_*/**/*.md"
-url-base = "https://github.com/xiaozhiliaoo/mdbook/"
+url-base = "https://github.com/xiaozhiliaoo/reading-note-2026/"
 
 # [output.latex]
 # latex    = true  # default = true

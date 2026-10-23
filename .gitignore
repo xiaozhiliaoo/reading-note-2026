@@ -24,3 +24,4 @@ gradlew
 gradlew.bat
 /.gradle/
 /build/
+src/rss.xml
