@@ -1,4 +1,6 @@
-# mdbook-template
+# reading-note-2026
+
+[https://xiaozhiliaoo.github.io/reading-note-2026/](https://xiaozhiliaoo.github.io/reading-note-2026/)
 
 ## Run
 
