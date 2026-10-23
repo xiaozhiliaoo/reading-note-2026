@@ -18,7 +18,7 @@ mdbook clean && mdbook build && mdbook serve
 
 需要配置book.toml中github地址
 
-## 安装mdbbok插件
+## 安装mdbook插件
 
 rustc --version
 rustc 1.99.1 (58cf8f9c3 2026-10-13)
