@@ -13,4 +13,6 @@
     - [投资交易](investment/trade/intro.md)
       - [投资日思](investment/trade/daily-thinking.md)
       - [交易记录](investment/trade/trade-record.md)
+      - [投资总结](investment/trade/summary.md)
+        - [2024-2026这三年](investment/trade/summary/three-year-summary.md)
     - [投资读书](investment/read/intro.md)
