@@ -1,0 +1,1242 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>笔记杂记 - 阅读笔记</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="阅读笔记">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../investment/intro.html"><strong aria-hidden="true">1.</strong> 投资</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/philosophy/intro.html"><strong aria-hidden="true">1.1.</strong> 投资哲学</a></li><li class="chapter-item "><a href="../../../investment/strategy/intro.html"><strong aria-hidden="true">1.2.</strong> 投资策略</a></li><li class="chapter-item "><a href="../../../investment/analysis/intro.html"><strong aria-hidden="true">1.3.</strong> 投资分析</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/analysis/financial-report.html"><strong aria-hidden="true">1.3.1.</strong> 财报分析</a></li><li class="chapter-item "><a href="../../../investment/analysis/company/intro.html"><strong aria-hidden="true">1.3.2.</strong> 公司分析</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/analysis/company/601888.html"><strong aria-hidden="true">1.3.2.1.</strong> 中国中免</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../investment/trade/intro.html"><strong aria-hidden="true">1.4.</strong> 投资交易</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/trade/daily-thinking.html"><strong aria-hidden="true">1.4.1.</strong> 投资日思</a></li><li class="chapter-item "><a href="../../../investment/trade/trade-record.html"><strong aria-hidden="true">1.4.2.</strong> 交易记录</a></li><li class="chapter-item "><a href="../../../investment/trade/summary.html"><strong aria-hidden="true">1.4.3.</strong> 投资总结</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/trade/summary/three-year-summary.html"><strong aria-hidden="true">1.4.3.1.</strong> 2024-2026这三年</a></li><li class="chapter-item "><a href="../../../investment/trade/summary/journal.html"><strong aria-hidden="true">1.4.3.2.</strong> 投资杂记</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../investment/read/intro.html"><strong aria-hidden="true">1.5.</strong> 投资阅读</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../investment/read/books/intro.html"><strong aria-hidden="true">1.5.1.</strong> 读书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../investment/read/books/journal.html" class="active"><strong aria-hidden="true">1.5.1.1.</strong> 笔记杂记</a></li></ol></li><li class="chapter-item "><a href="../../../investment/read/weeklyonstock.html"><strong aria-hidden="true">1.5.2.</strong> 证券市场周刊</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/read/weeklyonstock-3090.html"><strong aria-hidden="true">1.5.2.1.</strong> 2026年10月17日-第40期-总3090期</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../../health/intro.html"><strong aria-hidden="true">2.</strong> 健康</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">阅读笔记</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/xiaozhiliaoo/reading-note-2026" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="3小时快学etf"><a class="header" href="#3小时快学etf">3小时快学ETF</a></h1>
+<p>ETF学习</p>
+<p>ETF在交易所买卖，指数基金在基金公司买卖。</p>
+<p>交易型开放式指数基金</p>
+<p>申购，赎回，交易</p>
+<p>ETF交易费率：买卖佣金交易费率，无印花税，管理费，托管费。基金费率：申购费，赎回费，管理费，托管费</p>
+<p>首个ETF：SPDR 其他：QQQ，MSCI EEM 国内首个：上证50ETF</p>
+<p>ETF指数投资最高形式。</p>
+<p>指数投资：指数，指数基金，指数型LOF，指数ETF</p>
+<p>ETF有基金分红+差价收入无需缴纳税。</p>
+<p>ETF一级市场，二级市场。</p>
+<ol>
+<li>T日从一级市场申购ETF份额当日就可以在二级交易市场卖出。</li>
+<li>T日从二级市场买入ETF当日可在一级市场赎回股票。</li>
+<li>T日从一级市场赎回得到的股票可当日卖出。</li>
+</ol>
+<p>跨境ETF VS QDII</p>
+<p>投资海外方式：ETF，QDII</p>
+<h1 id="defi与金融的未来"><a class="header" href="#defi与金融的未来">DeFi与金融的未来</a></h1>
+<p>传统金融体系是少数人的游戏，但得益于以太坊的开源性，开发者可以利用许多现成的资源，打造自己的DeFi平台。</p>
+<p>LUNA是一种算法稳定币，采用类似于“跷跷板”的机制与美元锚定</p>
+<p>稳定币就是起源于DeFi的极具价值的创新。稳定币可以让全世界的任何人在全球各地使用加密货币，人们在使用过程中无须接受中心化机构审查，具有完全的自主性，还可以享有美元般的稳定购买力。而且就算美元不稳定了，稳定币也是稳定的。</p>
+<p>DeFi本质上是一个充满竞争的分布式金融应用市场，这些应用可以提供金融的基础功能，比如交易、存储、贷款和代币化。</p>
+<p>股票暗池交易：大机构将大宗交易都转移到暗池中，这是因为在暗池的点对点交易，比传统的交易所交易成本低得多。</p>
+<p>价值与有形和无形没有关系。</p>
+<p>比特币仍将作为重要的价值储藏手段和对冲长周期通胀的资产。与黄金一样。</p>
+<p>DeFi支持者认为，所有金融基础设施都应该替换为智能合约，进而可以为更多的人提供更多价值。</p>
+<p>智能合约是运行在区块链上的代码</p>
+<p>ERC-20同质化代币 ERC-721非同质化代币。代币是独一无二的，通常用于收藏品和金融资产，比如点对点借贷。</p>
+<p>预言机（oracle）是能播报区块链外部信息的数据源。合约和账本之外的世界是隔离的。</p>
+<p>稳定币的价格可以和美元或黄金锚定，可以维持价格稳定。三种机制：法币抵押，加密货币抵押，无抵押。</p>
+<pre><code class="language-text">法币抵押型稳定币：USDT，USDC
+加密货币抵押稳定币：DAI，sUSD
+无抵押稳定币：Basis，Ampleforth（AMPL），Empty Set Dollar（ESD）
+</code></pre>
+<p>DAO通常需要某种治理代币（governance token），持有者拥有一定比例的投票权，可以对社区提案进行决策。</p>
+<p>同质化代币是以太坊和DeFi的里程碑。</p>
+<p>美元就是同质化资产。</p>
+<p>同质化代币：权益代币，功能代币，治理代币</p>
+<p>NFT可用作拥有某项资产的独有证明。</p>
+<p>NFT的用途之一是可用作点对点贷款的所属权，这个贷款具有特定的利率和条款。
+另一个用途是彩票，因为只有一张或有限数量的彩票会中奖，其余彩票没有价值，所以彩票是非同质化的。
+NFT还有一个强大的用途，是通过收藏品连接金融和非金融领域。例如，代币可以代表艺术品、视频、音乐，甚至是一条推文的所有权。NFT也可以表示游戏或其他场景中的稀缺物品，并在NFT的二级市场实现保值。</p>
+<p>调整供给是通过智能合约提高（铸币）或降低（销毁）同质化代币的供给。</p>
+<p>流动性挖矿。</p>
+<p>激励：抵押激励，直接激励</p>
+<p>抵押奖励（staking reward）
+抵押惩罚（消减 slashing）</p>
+<p>互换（swap）就是将一种代币换成另一种。</p>
+<p>在以太坊上，以非托管的方式进行代币互换的平台是去中心化交易所（Decentralized Exchange，简写为
+DEX）目前DEX 有两种主要机制确保流动性：订单匹配（ order book matching ）和自动做市商（Automated Market Maker，简写为AMM）</p>
+<p>自动做市商的缺点之一是伴有非固定损失（impermanent loss）</p>
+<p>稳定币交易对特别受自动做市商欢迎。</p>
+<p>价格和流动性的波动都会引发非固定损失，因为合约被设置成卖出升值资产、买入贬值资产。</p>
+<p>https://yieldprotocol.org/</p>
+<p>收益协议。</p>
+<p>收益协议（yield protocol）提出了一种有担保的零息债券的衍生品模型</p>
+<p>dYdX提供的主要衍生品是ETH和比特币的永久期货。</p>
+<p>Synthetix的目标是创造各种各样的流动性组合衍生品，模式简单而又新颖。该公司发行Synth代币，其价格与底层资产挂
+钩，并由抵押品支撑。</p>
+<p>包装比特币（wBTC）采取链外资产链上化的方式进行比特币（BTC）代币化</p>
+<p>集合协议提供了“复合代币”的代币化方法。集合协议不是将非以太坊的资产代币化，而是将以太坊代币组合成复合代币，更像
+传统的ETF。</p>
+<p>DeFi的基础是智能合约。</p>
+<p>https://pancakeswap.finance/</p>
+<p>绝大多数DeFi协议需要预言机才能正常运行。</p>
+<p>预言机三种解决方案：</p>
+<ol>
+<li>Schelling-point oracle：Augur和UMA</li>
+<li>API oracle：Provable、Oraclize和Chainlink</li>
+<li>应用定制化的预言机：Maker和Compound</li>
+</ol>
+<p>缓解以太坊扩容风险方案：Polkadot、Zilliqa和Algorand</p>
+<p>垂直扩容：Solana
+水平扩容：以太坊2.0</p>
+<p>基于以太坊，有两种主要类型的DEX。AMM和订单簿交易所。</p>
+<p>Uniswap可能是最知名的AMM，它也被称为常数函数做市商（Constant-Function
+Market Maker，简写为CFMM）。Uniswap v2依靠两种资产的乘积来
+确定交易价格。两种资产在交易后发生额度变动，其价格受到资金池
+的金额总量的影响。</p>
+<p>中心化金融托管的公司，现在也提供DeFi的解决方案，例如富达数字资产（FidelityDigital Assets）。</p>
+<p>比特币和以太坊1.0使用的工作量证明共识机制。以太坊2.0采用权益证明共识机制。</p>
+<p>SEC不断评估这些新资产，判定其是否为证券并加以监管。</p>
+<p>CFTC将许多高额市值的加密货币裁定为商品，使其免受资金划拨法的约束。</p>
+<p>法定货币：无抵押纸币。</p>
+<p>治理代币：MakerDAO的MKR币和Compound的COMP代币</p>
+<p>初始DeFi 发行：Initial DeFi Offering IDO：为新代币设定初始汇率的方法</p>
+<p>铸币和销毁是无抵押型稳定币模型的重要机制。</p>
+<p>互换（Swap）用一种代币交换另一种代币。在DeFi中，互换具有不可分割性，并且是非托管的。</p>
+<h1 id="etf全球投资指南"><a class="header" href="#etf全球投资指南">ETF全球投资指南</a></h1>
+<p>有一个美国股市账户，就可以购买美国股市内丰富的投资于全球市场的ETF。一个账户，投资全球。</p>
+<p>ETF是投资美国市场的最佳工具</p>
+<p>BlackRock 贝莱德</p>
+<p>美股ETF:
+标普500投资ETF
+道富SPY（0.09%）
+贝莱德IVV（0.04%）
+先锋VOO（0.05%）</p>
+<p>小盘股ETF：
+IWM，挂钩罗素2000指数（Russell 2000 Index），规模420亿美元</p>
+<p>IJR，挂钩标普600小盘股指数（S&amp;P 600 Small Cap Index），规模360亿美元；</p>
+<p>VB，挂钩CRSP美国小盘股指数（CRSP U.S.Small CapIndex），规模216亿美元。</p>
+<p>罗素（Russell）、标普（Standard &amp; Poor's）</p>
+<p>QQQ实际上可以看作科技股中的蓝筹基金，与美国股市整体的蓝筹基金SPY相比，近5年，两者的累积收益率是141%和85%。</p>
+<p>美股行业ETF</p>
+<p>消费品板块双杰：XLP和XLY</p>
+<pre><code class="language-text">XLP：道富资管，必须消费（0.14%）
+XLY：道富资管，非必需消费（0.14%）
+IBB：贝莱德，生物科技股主导，专门投资纳斯达克生物科技100指数的公司（0.47%）
+BIB：ProShares Ultra纳斯达克生物科技，2倍杠杆的IBB
+ITA：美国军工板块之王，安硕美国军工板块基金（0.44%）
+VNQ：房产ETF王者，涉足美国房产的高流动性选择，先锋基金（0.12%）
+ITB：安硕美国房产建设基金
+FXI：FXI 中国大盘股ETF-iShares
+SH：Proshares做空标普500，持有的不是SPY500个股票，而是标普500指数的掉期合约。
+DOG：道指ETF-ProShares做空
+RWM：罗素2000做空-ProShares
+SSQ：2倍做多标普500指数ETF。
+TQQQ：3倍做多纳斯达克100指数ETF，其实就是做多QQQ。
+NUGT：3倍做多金矿指数ETF。
+QLD：2倍做多纳斯达克100指数ETF。
+UCO：2倍做多石油价格ETF。
+UYG：2倍做多美国金融板块ETF。
+UWT：3倍做多石油价格ETF。
+SOXL：3倍做多半导体芯片板块ETF。
+BIB：2倍做多纳斯达克生物制药100指数ETF。
+DDM：2倍做多道琼斯工业指数ETF。
+在美国市场，还有将杠杆与做空操作一同进行的杠杆做空类ETF，
+可谓ETF品种中风险最高的一类，其中典型的有：
+SDS：2倍做空标普500指数ETF。
+TZA：3倍做空美国小盘股ETF。
+SQQQ：3倍做空纳斯达克100指数ETF。
+SPXS：3倍做空标普500指数ETF。
+DUST：3倍做空金矿股ETF。
+FAZ：3倍做空金融板块ETF。
+DXD：2倍做空道琼斯工业指数ETF。
+EDZ：3倍做空新兴市场ETF。
+</code></pre>
+<p>标准普尔指数委员会主席的大卫·布利泽（DavidBlitzer）：美国市值最大的上市公司按照市值权重排队</p>
+<p>印度代表性的指数是敏感指数（Sensex Index 30） BSE SENSEX S&amp;P Bombay Stock Exchange Sensitive Index</p>
+<p>尼夫迪指数（NIFTY50）</p>
+<p>印度股市长牛</p>
+<p>印度ETF
+INDA：大盘股（0.68%）
+SCIF：小盘股（0.78%）</p>
+<p>EAFE（Europe，Australia and Far East）非美发达国家或地区市场”，用熟悉的“三个世界”划分，属于“第二世界”，包括欧洲、日本、韩国、澳大利亚，中国香港市场。</p>
+<p>中国境内股市便被定位为新兴市场</p>
+<p>阿根廷默瓦尔指数（MERVAL）</p>
+<p>ARGT的阿根廷市场基金</p>
+<p>越南胡志明指数</p>
+<p>EFA：欧澳远东指数ETF-iShares（0.32%）</p>
+<p>巴菲特：长期做多更容易赚钱，你不可能通过做空赚大钱，因为巨大损失的风险意味着你不能下重注。我们会永不做空，因为我们太大了。</p>
+<p>NAV是内在价值的体现，挂钩股票的价值，而ETF的股价是市场价值的体现</p>
+<p>欧洲，亚洲ETF</p>
+<pre><code class="language-text">EWG：德国ETF-iShares
+EWJ：日本ETF-iShares
+VGK：先锋基金发行的欧洲市场基金，投资欧洲主要国家股票，市值190亿美元。
+EZU：贝莱德旗下的欧洲市场基金，仓位与VGK相似，市值158亿美元。
+EWU：英国市场基金，英国还没有脱欧，且其是欧洲国家，在其独立自主的政策下，可能有特别的行情出现，市值25亿美元。
+EWP：西班牙市场基金，市值10亿美元。
+EWL：瑞士市场基金，市值13亿美元。
+EWI：意大利市场基金，市值7.5亿美元。
+EWQ：法国市场基金，市值7.8亿美元。
+DFJ：日本小盘股红利基金，主要投资日本小盘股中的高分红股票，市值8.4亿美元。
+VPL：亚太市场基金，主要投资非美发达国家或地区市场中亚太地区的市场基金和中国香港地区，市值54亿美元。
+EWT：中国台湾市场基金。台湾股市对大家来说可能比较陌生，虽然大家对台积电、鸿海（富士康）也挺熟悉。随着半导体行业的进一步发展，台湾股市在这个板块带动下行情不错。投资者通过该基金，可以投资台湾市场，市值38亿美元。
+EWY：韩国市场基金，其充分反映了韩国经济中三星的“巨无霸”地位，三星电子占据了高达18%的仓位，市值42亿美元。
+EWA：澳大利亚市场基金，市值17亿美元。
+EWS：新加坡市场基金，市值7亿美元。
+FXI：中国香港股市大型公司股票的基金，也是美国市场最活跃的香港市场基金
+EWH：中国香港上市的非国企公司股票
+VWO：先锋基金公司的VWO是目前美国市场规模最大的新兴市场ETF产品之一（FTSE新兴市场指数）
+EEM：MSCI新兴市场指数 新兴市场ETF-iShares
+
+RSX：俄罗斯蓝筹股ETF，规模最大，超过了20亿美元。
+ERUS：以跟踪俄罗斯蓝筹股为主，但是指数为MSCI俄罗斯指数，规模超7亿美元。
+RUSL：3倍做多俄罗斯市场ETF，对于看多俄罗斯的投资者，加了3倍杠杆的这只品种看上去很诱人。
+RUSS：与RUSL方向相反，3倍做空俄罗斯市场，在俄罗斯股市2014年下半年暴跌的时候，成为不少人做空俄罗斯获利的利器，在后面，我们有专门案例介绍。
+
+EWZ：贝莱德发行的巴西大盘股ETF，规模不小，已经超过80亿美元，看起来美国投资者对巴西市场还是很热情的。
+EWZS：与EWZ一同发行的巴西小盘股ETF，规模小，在8000万美元左右，适合与EWZ构成投资巴西的投资组合。
+BRZU：3倍做多巴西市场ETF。
+BZQ：2倍做空巴西市场ETF。
+</code></pre>
+<p>泰国代表性的证交所（SET）指数</p>
+<p>THD iShares安硕MSCI泰国ETF</p>
+<p>东南亚ETF
+马来西亚市场ETF：EWM
+印度尼西亚市场ETF：EIDO
+菲律宾ETF：EPHE
+越南市场ETF：VNM</p>
+<p>南美市场：
+阿根廷股市，最知名的指数是默瓦尔指数，价格权重。BURCAP指数，市值权重</p>
+<p>ARGT：Global X MSCI阿根廷ETF</p>
+<p>波兰市场ETF：EPOL</p>
+<p>FM：前沿市场ETF，包括目前前沿市场中的科威特、阿根廷、越南、肯尼亚、尼日利亚等，目前规模在7亿美元左右。 iShares前沿和精选</p>
+<p>新兴市场ETF</p>
+<p>TUR：土耳其市场基金，规模3.7亿美元。
+EWW：墨西哥市场基金，在特朗普时代，这个市场承受着较大的压力，目前规模10亿美元。
+ECH：智利市场基金，规模5.7亿美元。
+EPU：秘鲁市场基金，可能不少朋友都没想到秘鲁这样的小国也有股市，事实上，不但有，在2016年，该国股市还涨幅位居全球前列，该
+只基金当年也大涨64%</p>
+<p>中国ETF</p>
+<p>ASHR：ASHR 沪深300中国A股ETF-德银嘉实
+ASHS：ASHS 中证500ETF-德银嘉实
+CNXT：CNXT 中国中小企业板创业板ETF-VanEck
+CHAU 2倍做多沪深300ETF-Direxion
+KWEB 中国海外互联网ETF-KraneShares</p>
+<p>KWEB也就相当于中国的QQQ。</p>
+<p>汇率对冲ETF：德国股市的汇率对冲型ETF HEWG</p>
+<p>通过看空欧元的收益，对冲欧元贬值对股票投资带来的损失，所以这只
+基金的实际收益更接近德国股市本来的涨幅。</p>
+<p>汇率对冲ETF</p>
+<p>汇率对冲领域：WisdomTree 智慧树
+HEDJ：WisdomTree对冲股票欧洲ETF
+DXJ：日本对冲股票ETF-WisdomTree
+HEEM：iShares安硕货币对冲MSCI新兴市</p>
+<p>俄罗斯ETF就是3倍做空RSX的RUSS</p>
+<p>石油价格的ETF：
+USO 美国原油ETF
+BNO 布伦特原油价格的ETF
+UCO 2倍做多彭博原油ETF-ProShares
+SCO 2倍做空彭博原油ETF-Proshares
+XLE 能源指数ETF-SPDR 石油和天然气产业基金</p>
+<p>石油是什么？是商品，它本身并不产生价值，在工业社会之前，这黑乎乎的东西送谁，谁都不要。所以，产业的发展赋予了石油这种大宗
+商品以价值。</p>
+<p>天然气ETF</p>
+<p>UNG 美国天然气ETF</p>
+<p>在投资上还把黄金“保值”理解成一种类似“不亏钱”的意思，那就进入了严重的误区。</p>
+<p>石油ETF投资石油期货的形式略有不同，黄金ETF是以金融中介的形式去“持有”实体黄金。</p>
+<p>黄金行业ETF：
+GLD：全球最大黄金基金 GLD 黄金ETF-SPDR 道富资管
+GDX 黄金矿业ETF-VanEck
+GDXJ 小型黄金矿业ETF-VanEck
+JNUG 2倍做多小型金矿指数-Direxion
+JDST 2倍做空小型金矿指数-Direxion</p>
+<p>白银主题ETF：
+SLV 白银ETF-iShares</p>
+<p>农产品ETF：
+DBA Invesco德银农业ETF，DBA投资了包括玉米、活畜、大豆、糖、可可、咖啡等主要农产品在内的期货
+JO：咖啡ETF。 JO iPath彭博咖啡分类指数总回报ETN
+WEAT：小麦ETF。WEAT Teucrium小麦基金
+CORN：玉米ETF。CORN Teucrium玉米基金
+SOYB：大豆ETF。SOYB Teucrium Soybean Fund</p>
+<p>货币ETF：
+UUP：UUP 美元ETF-Invesco PowerShares（景顺） DB 美元指数投资，外汇投资
+EUO：欧元ETF-ProShares两倍做空
+YCS，2倍做空日元的基金此外，YCS 2倍做空日元ETF-ProShares
+FXB：做多英镑的ETF。 FXB 英镑ETF-CurrencyShares
+FXE：做多欧元的ETF。FXE 欧元ETF-CurrencyShares
+FXC：做多加拿大元的ETF。FXE 欧元ETF-CurrencyShares
+FAX：做多澳元的ETF。
+FXF：做多瑞士法郎的ETF。 FXF 瑞士法郎ETF-CurrencyShares
+FXY：做多日元的ETF。FXY 日元ETF-CurrencyShares</p>
+<p>德意志银行发布的一种影响力最大的美元指数，其持有的货币包括欧元、日元、英镑、加拿大元、瑞典克朗、瑞士法郎，目前不包括人民
+币。这个指数也是一个美元相对做空欧元、日元组合体的指数。</p>
+<p>由于各类品种的ETF出现，我们能捕捉到，同时可以投资的机会领域已经大大扩展。投资者需要在其中选择与自己的能力圈、知识圈、信息圈尽可能相匹配的机会去投资。</p>
+<p>穷玩股，富玩债</p>
+<p>债券ETF：
+IEF 美国国债7-10年ETF-iShares
+SHY 美国国债1-3年ETF-iShares
+IEI 美国国债3-7年ETF-iShares
+TLT 20+年以上美国国债ETF-iShares
+TLH iShares安硕10-20年国债ETF
+GOVT iShares安硕核心美国国债ETF
+AGG：美国债券ETF之王 AGG 美国全债市ETF-iShares。投资美国债券最基础的选择。
+LQD：投资公司债。LQD 债券指数ETF-iShares iBoxx投资级公司债
+HYG 债券指数ETF-iShares iBoxx高收益公司债（垃圾债）
+BND 总债券市场ETF-Vanguard
+TIP 通胀债券指数ETF-iShares
+EMB 新兴市场美元债ETF-iShares</p>
+<p>投资SPY其实就是投资美国股市一样，投资AGG也就是投资美国债市选择期限合适、风险匹配的债券产品长期投资，才是债券和债券ETF投资的正确方式。</p>
+<p>主题ETF</p>
+<p>SDY 股息指数ETF-SPDR S&amp;P，10年内的年化收益率是10.65%，而SPY为8.70%，从年化角度，每年多1.95%的收益率已经是非常大的优势。
+MTUM iShares安硕MSCI美国动量因素 动量投资：捕捉股票涨跌的趋势规律</p>
+<p>RSP 平均加权指数ETF-Rydex S&amp;P
+PKW 回购投资 PowerShares回购分配投资组合</p>
+<p>三种动量策略：</p>
+<ol>
+<li>卖掉一段时间涨得最猛的，买入一段时间跌得最惨的，这听上去有动态再平衡的感觉</li>
+<li>阶段性地买入近期上涨的，而卖出表现不佳的股票，</li>
+<li>根据近6个月的收益把股票排序，然后再等1个月，买入上涨的，做空下跌的，这样进行6个月，然后循环。</li>
+</ol>
+<p>事实上，要想战胜标普500指数这样的基准指数是不容易。</p>
+<p>海外投资的成本和门槛：1.外汇额度限制：这很实际，每年5万美元 2.资金出入成本：汇兑到资金成本损失</p>
+<p>建议海外投资以相对大额的资金开始，起码5000美元到10000美元起。因此，海外投资特别适合在国内投资积累了一定资金，
+进行资产全球配置和平衡后腾出一笔资金进行投资的投资者。而类似年终奖的大额一次性收入，投资者可以从中腾出部分资金进行海外投
+资，当作每年一到两次的“定投”，作为一种资产配置的调整。而每个月的日常投资，我们建议以国内基金的定投为主。</p>
+<p>A股市场“熊长”，所以定投策略特别适合。定投化解风险，而市场又给了充分的时间积累“本金”。</p>
+<p>日常坚持定投A股市场，尤其在市场波动大和熊市阶段坚持，当本金有较大积累，或者获得一次性的大额收入，或者A股市场进入牛市高峰阶
+段，再进行资金调整。在这个过程中，投资者逐步平衡个人全球化资产配置的结构，更稳健地让资产增值。</p>
+<p>VTI 整体股市指数ETF-Vanguard</p>
+<p>大市值的16只典型ETF：</p>
+<p>16只ETF已经覆盖了最主流的投资范畴，足够构成一个基本的、稳健的投资组合。</p>
+<p>同样的产品在很大程度，费率的高低影响了其吸引力，特别对于机构投资者来说，这些百分比的变化涉及的资金绝对成本都不小。</p>
+<p>挂钩指数或者挂钩一些策略和算法基础的动态调整指数的被动投资ETF依然是市场绝对主流。</p>
+<p>被动投资ETF仍然是主流投资ETF方式。</p>
+<p>FOF ETF
+AOK 核心保守配置ETF-iShares
+AOM 安硕核心适度配置ETF基金
+AOR iShares安硕核心成长配置ETF
+AOA iShares安硕核心激进配置型ETF</p>
+<p>风险本质上与目前拥有的财产无关，而与这些财产损失后生活受到的影响有关。</p>
+<p>动态再平衡和调仓区别：调仓是基本面判断发生变化。一年做一次动态再平衡就够了。</p>
+<p>AOR用整整10只ETF构成了其组合，经典的投资组合。</p>
+<p>经典投资组合
+股债各50%：IVV（或SPY）和AGG各占50%
+大盘股小盘股组合：60%配置大盘股，40%配置小盘股。IVV与IJR
+大盘股景气板块：
+IVV+QQQ+IBB=50%：30%：20%
+IVV+QQQ+IBB+SMH的组合，比例可以是50%：30%：10%：10%=主流市场+机会市场组合。</p>
+<p>AOR对海外市场的配置，属于经典式配置：美国股市+非美发达国家或地区市场+新兴市场</p>
+<p>美国市场+非美发达国家或地区市场+新兴市场：
+美国市场：标普500指数的IVV和具有成长性的科技蓝筹基金QQQ来构成。
+非美发达国家或地区市场：HEDJ，VGK
+新兴市场：印度：INCO 阿根廷：ARGT</p>
+<h1 id="etf投资指南-老罗"><a class="header" href="#etf投资指南-老罗">ETF投资指南-老罗</a></h1>
+<p>债券定投收益率不如一次性买入。定投选择三高股票基金：高波动，高成长，高前景。</p>
+<p>华宝添益：净值不变，每天分红。</p>
+<p>银华日利：收益累计净值，每年12-15分红。</p>
+<p>波动是定投的好朋友。</p>
+<h1 id="linux高性能网络详解"><a class="header" href="#linux高性能网络详解">Linux高性能网络详解</a></h1>
+<p>以太网卡工作在OSI 体系结构的第二层，即数据链路层。每一个以太网卡都有一个被称为MAC 地址的独一无二的48 位串行号.</p>
+<p>Linux 操作系统中的TCP/IP 协议栈. 4层。</p>
+<p>交换机在2层，路由器在3层。</p>
+<p>常见的总线包括I2C（inter-integratedcircuit）、SPI（serial peripheral interface）、USB（universal serial bus）、SATA（serial
+advanced technology attachment）、PCI（peripheral component interconnect）Express。本书中涉及的网卡设备都是通过PCI
+Express 总线连接到CPU，</p>
+<p>一条PCIe 链路可以由多条Lane（通道数）组成，目前PCIe 链路可以支持1、2、4、8、12、16 和32 条Lane。也就是说存在×1、×
+2、×4、×8、×12、×16 和×32 宽度的PCIe 链路。</p>
+<p>PCIe：为显卡（如NVIDIA RTX、AMD Radeon）、高速SSD（如NVMe）、网卡（如10G/40G以太网）提供高带宽支持。</p>
+<p>NVMe：基于PCIe + NVMe协议栈。NAND闪存、Optane SSD。
+NVMA：直接通过CPU内存控制器访问。持久化内存（如Optane PMem）</p>
+<p>• NVMe是存储协议，解决“如何快速读写SSD”的问题。
+• NVMA是内存技术，解决“如何让非易失性内存像DRAM一样工作”的问题。</p>
+<p>PCIe：PCI Express</p>
+<p>网卡作为需要高速处理数据的设备，一般是通过PCIe 总线和CPU 相连的。</p>
+<p>在通过网卡发送数据时，CPU 会先将数据写入主机内存，并通知网卡（通过PCIe 总线和内部总线）来读取。接收时则相反，网卡会先将数据存放进主机内存，再通知CPU
+来读取。这种由网卡设备（不经过CPU）直接访问主机内存的操作方式被称为直接存储
+器访问（direct memory access，DMA）</p>
+<p>4 种网卡：
+1．Intel I350-AM2
+2．Mellanox MCX4121A-XCAT
+3．Mellanox MCX515A-CCAT
+4．浪潮F37X FPGA 加速卡</p>
+<p>Linux 略显臃肿的网络协议栈已经无法满足用户对性能的需求。于是人们开始另辟蹊径，开发了多种新型的网络技术方案，比如DPDK、RDMA、XDP等。</p>
+<p>网卡：内核协议栈方案的网卡称为以太网卡 VS RDMA 网卡</p>
+<p>Linux 内核网络协议栈为基础的应用方案存在的3个缺点：</p>
+<ol>
+<li>软件运行时频繁地在内核态与用户态之间切换；</li>
+<li>在内核空间与用户空间的缓存之间，存在大量的数据复制行为；</li>
+<li>数据包的封装和解析工作由CPU 执行。</li>
+</ol>
+<p>消耗大量的CPU 运行时间，增加了发送和接收数据包过程中的时延。</p>
+<p>RDMA 通过绕过软件协议栈和避免不必要的数据复制来实现低时延、降低CPU 占用率、减少内存带宽瓶颈和提供高带宽。</p>
+<p>InfiniBand无法兼容现有以太网，部署需专用网卡和交换机，且需改造布线。 企业需权衡高性能需求与改造成本。若追求RDMA但想复用部分以太网设施，可考虑RoCE方案。（RDMA
+over Converged Ethernet）</p>
+<p>RDMA 已经是一个比较成熟的架构，主要应用在高性能计算HPC领域和大型数据中心中，典型的应用场景包括分布式神经网络计算（比如TensorFlow+MPI+RDMA）和大数据存储（比如HDFS+RDMA+NVMe）等。</p>
+<p>iWARP（Internet Wide Area RDMA Protocol）是IETF 定义的基于TCP 的RDMA</p>
+<p>Web 1.0：只读
+Web 2.0：可读+可写
+Web 3.0：可读+可写+所有权”</p>
+<p>代币：token</p>
+<p>https://multicoin.capital/2020/11/24/the-defi-stack/</p>
+<p>“三个以太坊基础”：“智能合约实现去中心化逻辑、Swarm实现去中心化存储、Whisper实现去中心化信息通讯。”</p>
+<p>“公链史其实就是一场尝试突破“不可能三角”的扩容史。”</p>
+<p>“WBTC就是用以太坊ERC20发行的锚定比特币的Token”</p>
+<p>应用链：Cosmos和OP Stack</p>
+<p>“Cosmos作为创建Layer1的Layer0层基础设施，其核心三件套为Tendermint共识协议、Cosmos SDK开发框架、IBC跨链协议”</p>
+<p>“几大主流以太坊Layer2都推出了自己的一键发链解决方案，包括OP Stack、Zksync HpyerChain、Arbitrum Orbit等。”</p>
+<p>“整个行业也更需要思考的是如何能够创造出更多被大量Web2的用户所理解与接受的应用层产品，去真正的让用户使用和消费起来，去真正的释放出这些公链的用武之地。”</p>
+<p>“DeFi中最重要的指标是总价值锁定（TVL），它代表了当前在DeFi生态系统中被利用的总资产。”</p>
+<p>“顶级DeFi平台包括用于去中心化交易的Uniswap和Curve，用于借贷的MakerDAO、AAVE和Compound，以及以太坊抵押衍生品Lido等等。”</p>
+<p>https://lido.fi/</p>
+<p>Rehypothecated 质押</p>
+<p>Rehypothecated (Wrapped/Restaked)</p>
+<p>“DEX 2.0取消了订单簿，而是允许用户在平台上直接、即时将任何代币兑换为任何其他代币，显著降低了交易的复杂性（和手续费成本），这也就是所谓的“Swap”。”</p>
+<p>AMM：Automated Market Maker</p>
+<p>“AMM使用数学公式自动确定代币的价格”：“恒定乘积公式，即K=x*y，由Bancor、Uniswap等平台率先使用，该公式规定流动性池中两种代币的数量的乘积应保持恒定。”</p>
+<p>“流动性挖矿也有其缺点。主要风险之一是所谓的“无常损失”。无常损失（Impermanent
+Loss，简称IL）是流动性提供者在参与DEX流动性挖矿时，可能会面临的一个最主要风险。无常损失是指，当流动性提供者提供两种资产给DEX做LP时，如果这两种资产的相对价格发生变化，可能会导致流动性提供者的最终净值，低于他们直接持有这两种资产
+（而不存入DEX）的理论价值。”</p>
+<p>“因为DeFi和区块链的精神是一致的，都是想做到去中心化和无许可（permissionless），因此DeFi采用的都是“过度抵押”，而不是“信用抵押”。”</p>
+<p>“Compound比肩的借贷协议，分别是MakerDAO和AAVE。前者创造了DAI这个稳定币，后者创造了“闪电贷”。”</p>
+<p>“Yearn也是DeFi领域可组合性的一个案例。”</p>
+<p>“USDT和USDC的发行过程很简单：用户将美元存入发行公司的银行账户，然后铸造等额的稳定币并发送到用户的钱包。而WBTC则涉及到用户将BTC存入保管人那里，然后铸造等
+额的WBTC。”</p>
+<p>“Frax是一种部分抵押（USDC）并部分通过算法稳定的算法稳定币。“混合模型试图提供兼具抵押型稳定币的稳定性+算法型稳定币的可扩展性的双重特性。”</p>
+<p>算法稳定币：AMPL</p>
+<p>“合成资产是区块链上实物资产的代币化表示。它们使用户能够获得多种资产（如商品、股票和货币）的风险敞口，而无需实际拥有它们。
+Synthetix（SNX）是一种DeFi协议，允许创建链上合成资产，或“Synths”。用户抵押SNX代币以铸造Synths，这些Synths跟踪实物资产的价格，例如在以太坊链上追踪比特币价格，
+莱特币价格，甚至理论上它可以追踪特斯拉、苹果股票的价格，并且拥有近乎无限的流动性”</p>
+<p>Defi基础设施：跨链桥，预言机，交易聚合器</p>
+<p>跨链桥：Polygon，Celer、Hop、BoringDAO、Orbit，Harmony和Ronin
+预言机：Chainlink
+交易聚合器：1inch、Cowswap、DODO</p>
+<p>“诈骗项目跑路了，大家就称之为“Rug”了。”</p>
+<p>“DeFi的火热本质上来源于人们对于“去信任”的追求，尤其是在美国银行业风雨飘摇的2023年。”</p>
+<p>TradFi：传统金融</p>
+<p>“DID同时是去中心化身份（Decentralized Identity）”</p>
+<p>DID=DI*SBT</p>
+<p>“灵魂绑定代币Soulbound Token”</p>
+<p>“Arweave是一个去中心化的永久性存储网络和区块链协议，旨在解决数据存储和持久性的问题。”</p>
+<p>“SBT存储在Arweave上，可以确保其长期保存和可访问性，而不必担心数据丢失或被篡改的风险。”</p>
+<p>“Web3领域，常用的投票工具主要有两类：
+Token-based的投票系统，比如Snapshot.org。这类投票系统的特点是，Token就是投票权本身。
+DID-Based投票系统，比如Voty.xyz。这类投票系统的特点是，DID是判断是否具有基础投票权的依据，而投票权重取决于声誉（SBT）或是声誉和财富（Token）的加权值</p>
+<p>https://d.id/</p>
+<h1 id="从零构建rust生产级服务"><a class="header" href="#从零构建rust生产级服务">从零构建Rust生产级服务</a></h1>
+<p>Serialize 特质</p>
+<p>Serde</p>
+<p>Rust 不提供运行时反射，一切都必须事先指定</p>
+<p>过程宏</p>
+<p>cargo install --version=0.6.0 sqlx-cli --no-default-features --features postgres</p>
+<p>cargo check、cargo lint、cargo build</p>
+<p>原子性引用计数指针Arc</p>
+<p>将连接池使用web::Data 包装起来，其本质上是一个Arc 智能指针</p>
+<p>sqlx::migrate!和sqlx-cli 执行sqlx migrate run 时使用的是同一个宏</p>
+<p>可观测性的目标是可以回答你对环境提出的任意问题——这是重点——无须提前知道你的问题是什么。</p>
+<p>log 包提供了5 个宏：trace、debug、info、warn 和error。</p>
+<p>Rust 中一种常用的模式，被称为“资源获取即初始化”（RAII）。</p>
+<p>cargo install cargo-udeps</p>
+<p>cargo +nightly udeps</p>
+<p>std::sync::Once std::sync::SyncOnceCell once_cell</p>
+<p>once_cell 是 Rust 中一个非常有用的库，用于实现单次初始化的全局变量或延迟初始化的值。它提供了线程安全的机制，确保在多线程环境中变量只被初始化一次。这使得它在处理全局状态、配置加载或资源初始化时非常方
+便。</p>
+<p>std::io::sink</p>
+<p>std::fmt::Display</p>
+<p>tracing 是Rust 生态系统的基础包。而log 是最基本的技术，tracing 已成为现代诊断工程与插桩领域的核心。</p>
+<p>std::convert::AsRef</p>
+<p>std::fs</p>
+<p>From/Into、TryFrom/TryInto</p>
+<p>panic 被用来处理不可恢复的错误：没有预料到或没有办法恢复的故障模式。例如，机器内存耗尽或磁盘已满。</p>
+<p>Rust 的主要错误处理机制是建立在 Result 类型。</p>
+<p>精确的断言错误：claim</p>
+<p>match 派上用场的地方：我们告诉编译器在Ok 和Err 的情况下该怎么做。</p>
+<p>问号 ？ 语法糖： 它允许在出现故障时使用一个字符而不是多行代码块提前返回。? 会触发使用 Err 变体的提前返回，因此只能在返回Result
+的函数中使用。</p>
+<p>fake 提供了基本数据类型（整数、浮点数、字符串）和高级对象（IP 地址、国家代码等）的生成逻辑，尤其是电子邮件。</p>
+<p>TryFrom Rust 的预导库 TryInto</p>
+<h1 id="全球资产配置"><a class="header" href="#全球资产配置">全球资产配置</a></h1>
+<p>本书作者：Meb Faber，还写过别的书《Global Value: How to Spot Bubbles, Avoid Market Crashes, and Earn Big Returns in the
+Stock Market》</p>
+<p>https://www.ubs.com/global/en/investment-bank/insights-and-data/2024/global-investment-returns-yearbook.html</p>
+<p>主要作者： https://www.jbs.cam.ac.uk/people/elroy-dimson/</p>
+<p>Paul Marsh，Mike Staunton ，Elroy Dimson</p>
+<p>投资组合评估：</p>
+<p>EMEA：Europe, the Middle East and Africa 欧洲中东非洲
+Switzerland：瑞士
+Americas：美国
+APAC：亚太（亚洲及太平洋）</p>
+<p>Credit Suisse：瑞士信贷
+UBS：瑞士银行</p>
+<p>https://www.jbs.cam.ac.uk/centres/ceam/research/investing-over-the-long-term/global-investment-returns/</p>
+<p>Cambridge Judge Business School</p>
+<p>历年报告： https://www.credit-suisse.com/about-us/en/reports-research/studies-publications.html</p>
+<p>禀赋风险</p>
+<p>1.传统的60/40投资组合
+“一个75%的亏损需要另外一个300%的回报才能回本，等价于年化率4.8%回报30年的复利！
+即使是50%的亏损，需要200%的回报才能回本，也需要年化率4.8%回报15年的复利才能回本。”</p>
+<p>“金融市场中唯一的免费午餐：多元资产分散化投资。”</p>
+<p>“资产配置模式是传统的60/40投资组合。投资组合简单配置60%的股票（S&amp;P 500，标准普尔500）与40%的十年
+期美国政府债券。”</p>
+<p>“夏普比率是风险调整回报的度量，计算方法为：（回报率-无风险利率）/波动率。无风险利率为国债的收益
+率。夏普比率（Sharpe Ratios）越高越好，一个有效的经验准则是，风险资产的夏普比率在0.20～0.30范围内。”</p>
+<p>“如果要成为一名优秀（有耐心）的投资者，你必须忍受业绩回撤。”</p>
+<p>“实际回报率低的原因之一就在于估值水平。所支付的价格影响收益率。”</p>
+<p>《Global value : how to spot bubbles, avoid market crashes, and earn big returns in the stock market》</p>
+<p>“未来的回报高度依赖于初始投资时的估值水平”。</p>
+<p>Cyclical Adjusted PE。CAPE。</p>
+<p>2.“全球60/40投资组合”</p>
+<p>股票资产的一半配置于美国股票，另外一半配置于非美国股票（MSCI EAFE），
+债券资产的一半配置于美国十年期债券，另外一半配置于非美国十年期政府债券</p>
+<p>https://globalfinancialdata.com/</p>
+<p>“REITS是公开交易的房地产投资信托，TIPS是美国财政通胀保护债券”。</p>
+<p>“投资组合仅会有两种状态，即创新高或者业绩回撤，没有其他折中情况，而且最大业绩回撤总是会发生在未来而非过去，因为最大回撤率数字只会增大”。</p>
+<p>“投资最大的挑战之一就是任何资产都有可能长期相对于其他资产表现不佳——甚至是完全的负回报或者亏损。”</p>
+<p>约翰伯格的懒人投资组合： https://www.bogleheads.org/wiki/Lazy_portfolios</p>
+<p>3.“风险均衡与全天候投资组合”</p>
+<p>“风险均衡（Risk
+Parity）策略构建投资组合基于“风险”而非基于资产价值占投资组合比例来确定各类资产的权重。风险均衡理论并不是特别新颖，但是“风险均衡”名词是在过去十几年中产生、并在最近几年流行起来的。风险具有不同的定义方法，但波动是一个简单的方法。例如，根据风险均衡理论，在60/40的股票和债券投资组合
+中，股票权重并非是60%，而是更接近90%，因为股票的波动基本上可以决定投资组合的总体波动。。</p>
+<p>“全天候”（The All Weather）的投资策略”“持有4个不同的投资组合，每个投资组合的风险相同，每个投资组合都会在特定环境中业绩优秀，这些特定环境是：（1）通货膨胀上升；（2）通货膨胀下降；（3）增长率上
+升；（4）增长低于预期。”</p>
+<p>4.“恒定资产配置投资组合”</p>
+<p>The Permanent Portfolio</p>
+<p>黄金配比过多。</p>
+<p>6.全球市场投资组合GMP</p>
+<p>“全球市值加权投资组合？因为主要的困难在于很难精确地确定权重”。</p>
+<p>7.“罗伯·阿诺特的投资组合”</p>
+<p>《基本面指数投资策略》Robert D. Arnott smart beta 发明者。</p>
+<p>“在Smart Beta与因子相关的投资组合中，我们的主观思想是最大的元素或者因子。”</p>
+<p>“罗伯·阿诺特的资产配置投资组合中根本没有使用市值加权方法，”</p>
+<p>8.“麦嘉华的投资组合”</p>
+<p>麦嘉华（Marc Faber）</p>
+<p>“黄金、股票、债券和现金、固定资产4个领域各自分配25%的比例”</p>
+<p>9.“捐赠基金的投资组合，斯文森、埃尔·埃利安、常春藤Ivy”</p>
+<p>大卫斯文森：“对于任意给定的收益率，如果你分散投资，那么你便可以较低的风险获得此收益；或者，对于任
+意给定的风险水平，如果你分散投资，那么你将会获得更高的回报率。因此这是一份免费午餐。多元化可以使你
+的投资组合取得更好的表现。”</p>
+<p>《常青藤投资组合 如何像顶级捐赠基金那样投资并规避熊市？》常春藤ivy</p>
+<p>《碰撞：世界金融新版图》 埃尔·埃利安</p>
+<p>《非凡的成功》大卫斯文森</p>
+<p>Ivy：常春藤
+EL-Erian： 埃尔·埃利安
+斯文森：非凡的成功</p>
+<p>10.“巴菲特资产配置组合”</p>
+<p>“10%的现金投资于短期政府债券，剩余90%的现金投资于一个低成本的标准普尔500指数基金”。</p>
+<p>“资产配置策略比较”</p>
+<p>“资产配置方式其实都是在选择如何配置三大类资产：股票、债券和实物资产”</p>
+<p>“现代投资组合理论认为投资往往处于一种均衡状态，你在承担风险的同时也获得了收益。你可以为自己的投资
+组合做的最伟大的事情之一便是消除你的情绪决策。”</p>
+<p>“对投资组合进行再平衡是十分重要的。再平衡的频率并不重要，你可以每年做一次再平衡，甚至隔个几年做也
+不错。”</p>
+<p>“如果你的投资组合中存在一个需要买入并长期持有的配置，你的重要任务是要想尽办法，尽可能地减少总的税
+费和成本。”。</p>
+<p>“只要你的组合中已经包含了主要的资产类别，股票，债券和实物资产，结果不会差异太多，确切的金额和比例
+真的不重要。调整新兴债券（坚果），边境市场（香草）或更多的巧克力（股票）之间的细微比例会显著地改变
+结果吗？我觉得不会。但是，如果你在烹饪过程中所有材料都想加，把所有的原料一股脑地全部混在一起烤，这
+才是一种真正的“灾难食谱“——这恰恰会让你的投资结果变糟。这本书所能给予你最大的收获，就是不要支付太
+多的费用，这会损伤你的资产配置结果。”</p>
+<ol>
+<li>任何资产都可能会遭遇灾难性的损失。</li>
+<li>通过加入不相关的资产来优化你的投资组合是真正且唯一的免费午餐。</li>
+<li>60/40是一个相当好的基准，尽管由于目前的估值，不太可能带来非常丰厚的回报。</li>
+<li>投资者至少应该考虑一下全球60/40投资组合以反映全球市值，特别是在国外市场的估值水平较低的情况下。</li>
+<li>投资者可以考虑在投资组合中加入实物资产，比如大宗商品、房地产和TIPS。</li>
+<li>在投资股市时，更多地考虑价值及动量因子，当然跟随趋势也不错。这一点在我们的另外三本书以及白皮书中有。</li>
+<li>一旦确定了你的资产配置组合或投资策略，坚持使用它。</li>
+<li>投资组合中确切的资产配置比例并不重要。</li>
+<li>确保实施投资组合，并重点关注税费。</li>
+<li>为了更容易地坚持投资组合和实施再平衡计划，建议使用ETF组合、或自动投资服务。每年（甚至每隔几年）再平衡。</li>
+</ol>
+<p>“托比亚斯（Tobias）投资组合”</p>
+<p>Andrew Tobias</p>
+<p>《你唯一需要的投资指南》</p>
+<p>“塔木德（Talmud）投资组合”</p>
+<p>“所有人都将他的资金分成三份，三分之一投资于土地，三分之一投资于商业，还有三分之一留下备用。”
+——塔木德（Talmud）”</p>
+<p>“7-12”投资组合”</p>
+<p>7个资产类别，12个细分领域。</p>
+<p>每个都是8.3% 比例。权益类 65%，固收 35%。
+传统理论：60% US Stock/ 40% US Bonds</p>
+<p>“克雷格·以斯拉夫（Craig Israelsen）”</p>
+<p>https://7twelveportfolio.com/7TwelveModel.shtml</p>
+<p>https://7twelveportfolio.com/Downloads/7Twelve-Model-Intro.pdf  很不错的网站。</p>
+<p>“威廉·伯恩斯坦投资组合”</p>
+<p>“拉里·格罗德罗投资组合”</p>
+<p>《可持续投资》</p>
+<p>“拉里·斯威德罗（Larry Swedroe）”</p>
+<p>【英】拉里·斯威德罗</p>
+<p>“拉里·格罗德罗投资组合与本书之前提到的组合有一个很大的不同之处，就是它投资价值型的小市值股票。小市值中的价值型股要比整个小市值板块每年多4%的收益，”</p>
+<p>绿巨人投资组合</p>
+<h1 id="区块链去中心化金融-实践与应用"><a class="header" href="#区块链去中心化金融-实践与应用">区块链去中心化金融-实践与应用</a></h1>
+<p>Uniswap实现了交易系统算法的去中心化</p>
+<p>拥有一个区块链钱包就拥有了去中心化金融的入口</p>
+<h2 id="第1章-dai-and-maker协议以数字资产为基础创造的对标美元的稳定币"><a class="header" href="#第1章-dai-and-maker协议以数字资产为基础创造的对标美元的稳定币">第1章 Dai and Maker协议——以数字资产为基础创造的对标美元的稳定币</a></h2>
+<p>https://makerdao.com/zh-CN/</p>
+<p>Dai和Maker协议：</p>
+<p>ETH、USDC、GUSC、WBTC（Wrapperded BTC）</p>
+<p>Dai币：质押稳定币的系统</p>
+<p>Libra/Diem</p>
+<p>代币 DAI</p>
+<h2 id="第2章-aave协议无托管借贷协议"><a class="header" href="#第2章-aave协议无托管借贷协议">第2章 Aave协议——无托管借贷协议</a></h2>
+<p>https://aave.com/</p>
+<p>智能合约取代了银行、托管和清算，这三者完全由部署在以太坊上的智能合约来自动操作。</p>
+<p>闪电贷：借出和偿还要在同一个区块中完成</p>
+<p>重要的去中心化金融借贷协议。</p>
+<p>代币 Aave</p>
+<h2 id="第3章-uniswap协议amm自动做市商交易平台"><a class="header" href="#第3章-uniswap协议amm自动做市商交易平台">第3章 Uniswap协议——AMM自动做市商交易平台</a></h2>
+<p>去中心化链上交易所的形式订单簿做市（Order Books）和自动做市（Automated Market Maker，AMM）</p>
+<p>订单簿做市的典型协议有dYdX</p>
+<p>自动做市的典型协议有Bancor、Uniswap和Kybernetwork，</p>
+<p>流动性池</p>
+<p>恒定乘积模型</p>
+<p>价格预言机</p>
+<p>传统交易所在流动性好的主流资产交易上仍然占优，表现出更小的买卖价差和滑点</p>
+<p>代币 UNI</p>
+<h2 id="第4章-dydx协议订单簿式交易平台"><a class="header" href="#第4章-dydx协议订单簿式交易平台">第4章 dYdX协议——订单簿式交易平台</a></h2>
+<p>https://dydx.exchange/</p>
+<p>https://dydx.trade/</p>
+<p>Compound</p>
+<p>dYdX采用了链上价格预言机来获取市场的公允价格。在预言机的选择上，它选取了MakerDao、Chainlink作为价格提供方。</p>
+<p>它们与StarkWare（https：//starkware.co/）合作推出了基于二层网络的永续合约交易业务，利用ZK-rollup技术，将链下的交易记录定期以零知识证</p>
+<p>明验证的方式提交到以太坊智能合约中，解决了纯链上订单薄式交易所成本高、流动性低、撮合效率低的问题。</p>
+<p>代币 DYDX</p>
+<h2 id="第5章-nexus-mutual协议保险协议"><a class="header" href="#第5章-nexus-mutual协议保险协议">第5章 Nexus Mutual协议——保险协议</a></h2>
+<p>代币 NXM</p>
+<p>区块链技术的核心是分布式账本，而保险行业对准确记账有着天然的强需求。</p>
+<h2 id="第6章-chainlink协议链上报价预言机"><a class="header" href="#第6章-chainlink协议链上报价预言机">第6章 Chainlink协议——链上报价预言机</a></h2>
+<p>https://zh.wikipedia.org/wiki/Chainlink</p>
+<p>https://chain.link/</p>
+<p>代币 LINK</p>
+<p>Synthetix、Polkadot、Conflux等头部区块链协议</p>
+<p>去中心化预言机网络：旨在将智能合约与现实世界数据连接起来。</p>
+<p>预言机 (一种defi工具)来作为智能合约的数据来源。</p>
+<p>Chainlink创新性地使用了ERC-677的Transferandcall来实现自身纯链上的商业交易逻辑</p>
+<h2 id="第7章-yearn-finance自动化投资收益平台"><a class="header" href="#第7章-yearn-finance自动化投资收益平台">第7章 Yearn Finance——自动化投资收益平台</a></h2>
+<p>Earn，也是Yearn的第一款产品。用户存入Dai、USDC等资产后，Earn会自动在多个借贷协议
+（Aave、Compound、dYdX等）中寻找收益率最高的协议，存入资金从而获取最高的存款利息。</p>
+<p>https://yearn.fi/</p>
+<p>代币 YFI</p>
+<p>Earn的模式类似于传统金融世界中的货币市场基金。</p>
+<p>Yearn还有Vault、Zap、Cover等产品。</p>
+<p>Vault根据既定策略，参与其他去中心化项目并获取收益，也可以使用一定的杠杆率，类似于对冲基金的操作方式。</p>
+<p>Zap提供了数字资产的交换。</p>
+<p>Cover提供了数字资产的保险协议。</p>
+<p>Yield Earin 收益赚取。</p>
+<h2 id="第8章-opyn协议衍生品交易平台"><a class="header" href="#第8章-opyn协议衍生品交易平台">第8章 Opyn协议——衍生品交易平台</a></h2>
+<p>https://markets.opyn.co/</p>
+<p>链上期权平台Opyn</p>
+<p>期权的卖出方的理论风险可以是无限的。</p>
+<p>在GME的案例中体现为众多散户的盈利和部分对冲基金的亏损。这样的风险敞口也对系统稳定性产生压力，经纪商最终只能通过中止流动性这样极端的办法来进行应对。人们不禁要问，传统金融中的期权体系是否对于市场波动性准备充足？未来的金融系统如何更好地应对期权的大规模交易？</p>
+<h2 id="第9章-synthetix协议合成资产平台"><a class="header" href="#第9章-synthetix协议合成资产平台">第9章 Synthetix协议——合成资产平台</a></h2>
+<p>QQQ基金是目前最大规模的追踪纳斯达克的交易型开放式指数基金（ETF）；
+做空纳斯达克指数的基金则包括PSQ和SQQQ基金等。</p>
+<p>代币 SNX https://coinmarketcap.com/currencies/synthetix/#About</p>
+<h2 id="第10章-metamask去中心化钱包"><a class="header" href="#第10章-metamask去中心化钱包">第10章 MetaMask——去中心化钱包</a></h2>
+<p>基于以太网络和支持ERC20代币的MetaMask</p>
+<p>区块链硬件钱包的安全性优于网络钱包，冷钱包的安全性优于热钱包。Metamask 属于网络钱包， 具体来说是分层确定性钱包</p>
+<p>助记词系统是由BIP39（Bitcoin Improvement Proposal 39）[2]提出的</p>
+<p>代币 MASK</p>
+<h2 id="第11章-defi的治理结构dao"><a class="header" href="#第11章-defi的治理结构dao">第11章 DeFi的治理结构DAO</a></h2>
+<p>智能合约替代了中介服务，实现程序自动化运行，那么DAO则是DeFi运行的组织制度，实现去中心化的治理与运营。</p>
+<p>的TheDAO到Aragon、Maker DAO、Moloch DAO</p>
+<p>MakerDAO是大名鼎鼎的DeFi项目</p>
+<p>代币：MKR</p>
+<p>MakerDAO作为早期使用治理代币进行去中心化DAO治理的典型，其他DeFi项目也纷纷效仿，如Kyber的KyberDAO、Synthetix的SynthetixDAO。</p>
+<p>Compound利用其COMP代币</p>
+<p>以太坊联合创始人布特林和约瑟夫·鲁宾（Joseph Lubin）</p>
+<p>Aragon代币 ANT</p>
+<p>DeFi无疑是计算机技术给金融行业带来的又一次革命。</p>
+<p>第14章 DeFi底层技术详解</p>
+<p>数学基础是单向陷门函数（Trapdoor function），这种技术利用了某些数学公式从一个方向计算非常容易，但是从另一个反向推算非常困难的特性，“</p>
+<p>区块链中广泛使用的是基于椭圆曲线加密（ECC）的非对称加密算法，该算法的特点是可以用更短的密钥长度获得与RSA相对应的安全性。</p>
+<p>51%算力攻击</p>
+<p>USD Tether最初也是基于Mastercoin的比特币脚本扩展实现的</p>
+<p>以太坊就是DeFi的起源</p>
+<p>金融产品及衍生品业务形态，包括借贷、质押、期货、期权。</p>
+<p>基于非同质化代币（NFT）的艺术品交易，基于Oracle服务的分布式预测市场服务。</p>
+<p>Polkadot：区块链 代币 DOT。https://coinmarketcap.com/currencies/polkadot-new/</p>
+<p>Polkadot 成为了生态系统的竞争区块链之一，其他值得注意的例子包括以太坊 (ETH)、Solana (SOL) 和 Polygon (MATIC)。</p>
+<p>Kraken 韩国交易所</p>
+<p>Ethereum vs Cardano vs Polkadot vs Solana</p>
+<p>•
+• First-generation – Bitcoin
+• Second generation – Ethereum
+• Third generation – Cardano（ADA）, Polkadot（DOT）, Solana（SOL）
+• 市值、成交量和总流通量，总锁定价值 (Total Value Locked，简称TVL)也是投资者对加密资产整体价值进行评估常用的指标
+https://maddevs.io/blog/ethereum-vs-cardano-vs-polkadot-vs-solana/</p>
+<p>区块链技术有所谓的“不可能三角”概念，即区块链网络的分布式程度、可扩容性和安全性是三个此消彼长的特性，彼此矛盾，不可能同时达到。</p>
+<p>ZKP：零知识证明</p>
+<h1 id="周期估值与人性"><a class="header" href="#周期估值与人性">周期、估值与人性</a></h1>
+<p>“菲利普·费雪投资杜邦、陶氏、德州仪器和摩托罗拉，柏基 (Baillie Gifford)投资亚马逊、特斯拉等经典案例都值得深入研究。”</p>
+<p>2003—2005：“贵州茅台、张裕A、苏宁易购、云南白药”</p>
+<p>四种投资模式： 1. 自上而下、投资时钟和行业轮动 2. 自下而上 3.赛道投资 4.主题投资和游资</p>
+<p>2005年之后，每隔五六年A股就有一个新的“玩法”，崇尚一批新的资产，并认为是永恒的赛道</p>
+<p>“2005—2009年的“周期为王”、2010—2015年的“成长致胜”、2016—2022年的“茅宁共舞”。</p>
+<p>市场选股标准在变化。</p>
+<p>2007周期股</p>
+<p>2013年开始，随着宏观波动的收敛，投资时钟的适用性大大降低，</p>
+<p>2005—2009年，主流投研方法论就是投资时钟。</p>
+<p>“生在美国，所以享受了巨大的贝塔 (β)” - 巴菲特</p>
+<p>“周期股（原材料、能源、工业）”</p>
+<p>“打造优秀的投资体系很难，坚持更难，尤其是在逆境中。”</p>
+<p>国企上市时间：</p>
+<p>“流动性是一个非常复杂、模糊且虚幻的概念，在多个层面皆有所指。”</p>
+<p>推荐书籍：
+“金融学和经济学的理论常识”：
+哈尔·R.范里安的《微观经济学：现代观点》
+费利普·拉雷恩的《全球视野的宏观经济学》
+米什金的《货币金融学》
+姜波克老师的《国际金融学》
+夏威尔·萨拉-伊-马丁合著的《经济增长》</p>
+<p>金融学的两大分支是资产定价 (asset pricing)和公司金融 (corporate finance)。
+兹维·博迪和罗伯特·C.莫顿合著的《金融学》，斯蒂芬·A.罗斯等人著的《公司理财》
+克里舍·G.佩普等人著的《运用财务报表进行企业分析与估价》和阿斯沃斯·达摩达兰的《投资估价》
+纳德·鲍莫尔的《经济指标解读》
+高善文《在周期的拐点上》和《透视繁荣》
+《致敬，我们的市场——中国股债、行业全景复盘》
+《今晚八点半，行业复盘系列》
+申万2012年:《行业工具书》
+《策略投资方法论》
+2001年“央行发布的季度货币政策执行报告”
+从供给角度思考问题的书籍推荐马拉松资本的《资本回报》。</p>
+<p>斯坦利·克罗：《克罗谈投资策略》</p>
+<p>绿光资本的大卫·爱因霍恩长期做空特斯拉，特斯拉的股价在其做空后上涨了好几倍，绿光的损失可想而知。</p>
+<p>朱利安·罗伯逊</p>
+<p>约翰·保尔森 做空</p>
+<p>指数投资是最简单入门级别，但不代表容易。被动投资，分散投资。</p>
+<p>索罗斯基金：德鲁肯米勒</p>
+<p>“不能将未来行业还有多少空间、渗透率还有多少作为投资的唯一依据。理性的投资还是要考虑性价比、考虑估值。”</p>
+<p>“无论是奥肖内西的《投资策略实战分析》，还是西格尔的《股市长线法宝》，都用大量的实证证明低估值策略好于高成长和高ROE策略”</p>
+<p>“万事万物都是周期，过往表现良好的公司很可能未来表现更差。”</p>
+<p>“不是基本面恶化的股票才会跌，有时候估值太高，哪怕基本面兑现了股价也不会涨。”</p>
+<p>好股票：好公司，好价位。</p>
+<p>“2007年高点，这批周期股已经处在很高的估值，这样高的估值即便后续的故事大多兑现，也已经输在起跑线。”</p>
+<p>“喝酒”“吃药”“吹空调” 打酱油</p>
+<p>歌尔股份</p>
+<p>“智能手机的硬件行情从2010年就出现了，莱宝高科是当年的大牛股”</p>
+<p>市场方法论。</p>
+<p>周期股，消费股</p>
+<p>国阳新能-华阳股份</p>
+<p>“医药子行业就是原料药和代工仿制药，海正药业和华海药业是典型的牛股”。</p>
+<p>工程机械和重卡</p>
+<p>猪：牧原股份、温氏股份</p>
+<p>“以后指数就会在狭小的空间内波动，宏观策略无用，精选个股才是王道”</p>
+<p>熊市一般要杀三波，第一波杀估值，第二波戴维斯双杀，第三波尾部杀跌</p>
+<p>两个常识：其一，货币紧缩会导致经济下行；其二，通胀只是一种货币现象。</p>
+<p>2009年8月是个分水岭，之前周期股占优，之后消费股崛起。但2011年是个逆流，医药股经历成长礼、电子股大跌”</p>
+<p>“环保（碧水源、龙净环保等）、中药（云南白药、天士力，中药注射剂相关公司）、苹果供应链（歌尔股份等）、传媒板块，还有杰瑞股份、富瑞特装”</p>
+<p>茅老五：茅台，泸州，五粮液。</p>
+<p>一个人在正确的时候，很难区分能力和运气的；只有当屡屡犯错的时候，才会深度反思，从而进步</p>
+<p>很多“伟大的故事”，如消费升级、人均GDP提升，不能直接得出行业选择，这一逻辑过于简单。</p>
+<p>比如2022年年底的消费股就与2012年年初的周期股很像，虽然经过了2021年和2022年两年下跌，但投资者还是念念不忘。理由无非那些，
+如伟大的故事仍在（消费升级），估值处在5年最低，基本面没有多少问题</p>
+<p>自贸区行情：“外高桥和上港集团”</p>
+<p>策略投资三大任务：1 大势判断 2 行业选择 3 主题投资</p>
+<p>流动性既不能把握市场的涨跌，也不能解释市场的风格。</p>
+<p>创业板龙头股之一网宿科技</p>
+<p>莱宝高科</p>
+<p>投资的大道其实很简单：便宜的时候买入，贵的时候卖出。</p>
+<p>2014年年底“逆袭”的基础就是蓝筹股和主板处于一个极低的位置，环顾A股历史，蓝筹股估值最低的时候不是在大盘998点、1664点，也不是在2018年年底，而是在2014年年中。</p>
+<p>“投资中最难的环节——克服人性！在投资中，认知只是第一步，是研究层面的问题，有时候是很简单的，但关键是如何坚持认知，如何对抗人性，如何保持独立。”</p>
+<p>“茅台、格力、伊利、中国平安等一批白马股”</p>
+<p>“价值投资的核心是安全边际，所谓4毛买1元”。</p>
+<p>“显而易见的机会存在吗？天下哪有免费的午餐？：就像和学生散步的尤金·法玛不相信脚下会有100美元一样。因为他认为如果有早就被人拿了，基于这种认知，他甚至不愿意低头看一眼，弯腰捡一下。”</p>
+<p>“无数人都曾经幻想过自己在100元以下重仓茅台，而我曾经真正这样做过，但最终还是输给了人性，输给了各种担忧。”</p>
+<p>“投资的主要任务就是承受各种煎熬，这就是赚这份钱需要付出的代价。价值的认知并不难，根本不需要精确计算，目测即可，但要兑现需要承受各种煎熬。”</p>
+<p>“周期为王”的沪深300及“成长致胜”的创业板”。</p>
+<p>“由于美股市场非常成熟，“周期轮回”的现象就更加明显。过往70年，
+周期股：（工业品和资源品）曾有三次兴盛，分别是20世纪50年代、70年代和21世纪前10年。
+消费股：在两个阶段红火，分别是1966—1972年（以“漂亮50”为代表）、1980—1992年（真正盈利驱动的消费浪潮）。
+生物医药股和科技股：有过四次浪潮，只是每次的主角不一样。
+银行股：更是有过七轮周期，几乎每10年一次。
+美股汇集了全世界最优秀的一批公司，因此美股除了典型的“周期轮回”，还会不断地出现“时代的贝塔”，两种投资方法不分伯仲。而像英国、德国、日本等国，可能更多的是“周期轮回”。”</p>
+<p>周期轮回，时代贝塔。</p>
+<p>A股投资方法论。</p>
+<p>不要用“自上而下”的“伟大的故事轻易否定自下而上的明显改善。</p>
+<p>创业板指数权重：2025/1/6</p>
+<p>荣盛石化</p>
+<p>卫星化学</p>
+<p>中远海控</p>
+<p>纳斯达克中国金龙指数 (HXC)</p>
+<p>“2020年是茅指数和宁组合泡沫化的一年，但这种泡沫化与2007年的周期蓝筹股、2015年的创业成长股不同，它并没有引发整体市场的大牛市，”</p>
+<p>“建立投资框架很难，坚守投资框架更难，因为任何一种投资框架都不能驾驭所有的行情。经过了多年的探索，我们最终打造的框架偏价值投资，而价值因子在那两年经历了最残酷的考验。”</p>
+<p>“中概股和恒生科技指数的高点也出现在2021年的春节前。与茅宁陨落的慢节奏不同，它们的下跌完全符合泡沫崩盘的正常节奏。”</p>
+<p>2021:“中概出清、茅宁陨落、低估崛起，”---- 价值规律使然</p>
+<p>格雷厄姆：“在投资上，与一个坏的前提相比，一个好的前提可能会给投资者带来更多的麻烦。”</p>
+<p>方法论的进化：
+2000年，无股不庄、技术分析大行其道；
+2003年，中金、国君和申万开始真正的基本面研究，三大报表和估值模型的时代到来；
+2005—2011年，投资时钟一统天下、宏观策略成为王道；
+2012—2015年，看重轻资产、讲究互联网思维、关心外延并购重组；
+2016—2020年，摒弃行业之见，一切唯龙头股是举。”</p>
+<p>“这个世界没有永恒的赛道，只有永恒的周期思维。”</p>
+<p>“一切成长皆为周期，只不过由于商业模式不同，不同的行业周期长度不同”</p>
+<p>三个不变：一切皆周期，估值均有效，人性永不变。</p>
+<p>“不是股市有预见性，而是估值和位置足够低，投资者认为可以赌，可以承受任何风险。没有人可以预见未来，巴菲特曾反复说过他不是靠预测指数或者个股股价而赚钱的。”</p>
+<p>“经历和修行在这个时候就非常重要，可如果什么事情都要亲身经历，那如白驹过隙的一生，又能经历多少？所以，要读书、要复盘、要研究历史和大师的心得，从前人的经验教训中得到提升，这实在是成本最小的一种进步方式。”</p>
+<p>“周期主要站在实体的角度，描述宏观、行业和公司的景气度变化；估值则将实体投射到二级市场，到底要付出多少注码去表达我们对实体的评估；而人性在二级市场被无限放大，加剧了估值乃至景气度的波动。”</p>
+<p>“把握周期、重视估值、控制人性恰恰就是价值投资的内核。”</p>
+<p>“研究可以告诉你基于过往的案例和数据，现在持仓的胜率和赔率，但无法保证结果马上出现。好的投资不是未来致胜，而应该是现在就占优。”</p>
+<p>“我对未来的猜测没有任何优势，但对过往的熟悉让我迅速找到历史场景，得出概率分布，使投资的注码站在大数定律的基础上。”</p>
+<p>“建立在这种思维上的投研体系才真正有实战价值。所谓体系不是直接帮你构建出一个组合，而是将所有信息有序排列，让我们用同样的模式去思考，如此不断重复同样流程，最终找到问题所在。”</p>
+<h1 id="安全边际"><a class="header" href="#安全边际">安全边际</a></h1>
+<p>“几千亿的资金采用完全虚拟的、彻底忽略公司基本面的指数化投资策略，以付出注定平庸的代价换取避免大幅落后的尴尬。”</p>
+<h1 id="巴菲特的资产配置法"><a class="header" href="#巴菲特的资产配置法">巴菲特的资产配置法</a></h1>
+<p>作者：戴维・M.达斯特</p>
+<p>资产配置：多元化，重平衡，风险管理，在投资</p>
+<p>股价低可能是反复除权的结果。</p>
+<p>债券市场是其它所有事物的定价基础。</p>
+<p>2008年 标普500 跌 37% 新兴市场 53%。</p>
+<p>资产的非相关性。</p>
+<p>资产配置核心是找非相关性。在不同环境表现不同。</p>
+<p>资产配置-复利。</p>
+<p>市场保持非理性的时间总比你支撑的时间久。</p>
+<p>投资期限10，30年好像一周一样。</p>
+<p>资产组合和而不同。</p>
+<p>过度多元化不好，应该配置不相关资产组合。</p>
+<p>多元化不等于相关化。</p>
+<p>一个年利率为8%的资产在20年间用复利计算，41%的总收益在最好5年实现的。关于复利：在很少撤资情况下，让资产在一定时间内增长。</p>
+<p>在投资构成了长期收益非常重要部分。</p>
+<p>标准差来判断资产的波动。</p>
+<p>管理资产组合时候，希望均值回归为我所用。</p>
+<p>把钱装进口袋，不如把钱装进脑袋。</p>
+<p>人力资本转化为金融资本：收入，开销，生活方式，应对税负，通胀</p>
+<p>人力资本就像债券。保护人力资本：保险。</p>
+<p>投资组合最优化：既定风险下，合理配置投资组合达到最大收益。</p>
+<p>投资收益取决于运气还是精心筹划。</p>
+<p>过于狭隘眼光会让我们错误大趋势，以及大趋势对资产配置的长期规划。</p>
+<h1 id="巴菲特致股东的信"><a class="header" href="#巴菲特致股东的信">巴菲特致股东的信</a></h1>
+<p>长期而言将能够取得超越道琼斯指数表现10%的年均增长率这个目标。</p>
+<h1 id="巴菲特演讲"><a class="header" href="#巴菲特演讲">巴菲特演讲</a></h1>
+<p>https://github.com/gengjiawen/buffett-chinese</p>
+<p>在确定潜在目标非常值得时，一定要尽可能多地投资。</p>
+<p>整个现代投资组合理论的假设就是，你根本不知道自己在做什么。这个理论告诉你，你什么都不知道，所以就应该按照这个理论来做。</p>
+<p>在国内 1000W 左右及以下的资金，追求的目标应该是年化50%</p>
+<h1 id="市场微观结构"><a class="header" href="#市场微观结构">市场微观结构</a></h1>
+<p>《高频交易15讲丨探索纳秒时代的金融市场》</p>
+<p>《市场微观结构-高频交易视角》- 李路</p>
+<p>课程：https://www.icourse163.org/course/SHISU-1206672845</p>
+<h2 id="1-微观结构"><a class="header" href="#1-微观结构">1. 微观结构</a></h2>
+<p>微观结构基础知识（流动性、波动性、市场效率和市场组织结构），高频交易的起源、发展、策略及对金融市场和监管政策的影响，海外市场微观结构最新发展趋势（欧盟MiFID、美国RegNMS、清算竞争格局、可互换性）等内容。</p>
+<p>微观金融学（秒/毫秒/微妙/纳秒） 传统金融学（分/时/天/月/年）</p>
+<p>基于订单簿进行分析的框架</p>
+<p>高频：微秒/纳秒</p>
+<p>监管：欧盟 MiFID 美国RegNMS</p>
+<p>资金配置是金融学逻辑起点。</p>
+<p>金融学非常重视时间/风险，经济学不太重视。风险在时间上重新分担。</p>
+<p>同物同价的定价原理：套利。</p>
+<p>市场微观结构，和资产定价、公司财务共同组成了金融学三大基础方向。</p>
+<p>金融学知识分类：1 资产定价（CAPM，基础资产，期货，期权） 2 公司财务 3 市场微观结构（流动性，波动性，做市商，高频交易）</p>
+<p>融券：不是所有股票可以融券，成本高。</p>
+<p>西部黄金下跌：卖股票，融券，卖期货，期权（波动率增大，不确定涨跌）</p>
+<p>时间，价格，波动率 三层维度进行交易。</p>
+<p>在时间维度配置自己资产。</p>
+<h2 id="2-订单簿"><a class="header" href="#2-订单簿">2. 订单簿</a></h2>
+<p>市场买卖力量权衡，市场价格不是客观交易，而是很多人为制度设计出来的，比如限价单市价单，切片和逐笔，三价居中。订单簿规则制订合理是金融市场基础性作用。</p>
+<p>微观结构核心：订单簿 （价格，数量）前面，后面。订单簿衍生出来 最低，最高，均价，指标等概念。</p>
+<p>市价单：有人卖给你就行，没有撤单。很少有人用市价单。</p>
+<p>限价单：控制盈利，有撤单。</p>
+<p>交易制度对价格形成：价格优先，时间优先</p>
+<p>卖家价格越低，越容易成交。买家价格越高，越容易成交。</p>
+<p>10 sell 8 buy 8 sell 10 buy 成交价 8 和 10 都可以，需要规则。</p>
+<p>20世纪交易员找橄榄球系，声音大。交易大厅。</p>
+<p>切片价格数据：中国股票市场，不是成交价形成的逐笔价格，订单簿3s发一次，期货/期权市场是半s发一次。中间是黑箱。不是真正的价格曲线图。买卖盘只有10。价格反映不敏捷。并非市场真实价格，但是公平。</p>
+<p>逐笔价格数据：海外市场，订单簿都能反映到价格。</p>
+<p>价格优先时间优先：股票，etf期权撮合机制，10个买卖盘，3s一次</p>
+<p>三价居中：股指期货，商品期货，股指期货撮合机制（买价，卖价，上一笔成交价 sell 10 buy 20 上一笔 15 成交价 15
+设计为了价格波动小，价格反应效率变低了），5个买卖盘，0.5s一次</p>
+<p>流动性：能够以当前市场价格交易大量金融资产的能力。跳水。10m和3m。</p>
+<p>sell 10 buy 8 小到一个tick。tick=1，buy往下 7 sell往上 11。</p>
+<p>流动性度量：1 买卖差越小越好，小到一个tick，spread。一次交易成本越小。2 走遍所有的tick 3 报单量越多越好 4 市场的弹性好</p>
+<p><img src="../invest/materials/%E6%B5%81%E5%8A%A8%E6%80%A7.png" alt="流动性" /></p>
+<p>订单簿市场：场内市场</p>
+<p>房地产市场：场外市场</p>
+<p>经纪人存在场外市场。</p>
+<p>做市商：随时准备买卖的人。接受双向报价。</p>
+<h2 id="3-市场微观最新发展高频交易"><a class="header" href="#3-市场微观最新发展高频交易">3. 市场微观最新发展：高频交易</a></h2>
+<p>高频交易替代传统做市商。不是计算机发展，而是制度和监管。</p>
+<p>梧桐树 -》 做市商（不需要知道买卖双方，促成交易赚取了巨额利润，只和做市商交易）</p>
+<p>sell 10 buy 8 你想买卖，如果 10 8 是做市商给出来的，那么做市商利润是2元。投资者成本就是买卖价差，由做市商决定的。</p>
+<p>高频交易改变传统做市商不合理利润。提供了更好的买卖价差，降低了买卖价差。传统赚4块，但是高频次数多，已经放了很多买卖了，赚多个2块。淘汰传统做市商。</p>
+<p>美国市场做市商，一定高频交易。做高频交易，不一定做市商。两边报单做市商。</p>
+<pre><code class="language-text">sell 10
+sell-hf 9
+buy-hf 7
+buy 4
+</code></pre>
+<pre><code class="language-text">NAQ
+
+tick=1/8
+
+1/8 2/8 ... 7/8
+
+美国20多个做市商联合起来 1/8 4/8 6/8
+
+tick=1/4 投资人成本增倍，做市商利润增倍，欺骗了投资人。
+
+SEC法案出来后，所有人都可以做做市商。结束了半垄断。
+</code></pre>
+<p>纳斯达克当时采用多做市商制度，完全避免奇八分报价（如仅用0、1/4、1/2、3/4美元报价）。研究发现做市商可能通过隐性合谋维持宽价差。</p>
+<p>1994年《Christie-Schultz研究》指出，做市商避免使用奇数分数（如1/8），导致价差人为扩大。</p>
+<p>做市商角色变化：传统人工做市商地位下降，高频交易和电子做市兴起。十进制改革（2001年）：报价单位从1/8=0.25美元改为0.01美元，价差进一步压缩至几美分。</p>
+<p>论文：Why did NASDAQ Market Makers Stop Avoiding Odd-Eighth Quotes? 发表在 The Journal of Finance，作者 Christie和Schultz</p>
+<p>美国 NYSE 买，在 NAQ 卖。一个股票可以在30多家交易所交易。NBBO 全市场最优报价，所有交易所交易，交易所有竞争。HFT可以套利。</p>
+<p>长期投资人/养老金/社保金更愿意进入传统做市商。HF做市商报单量很少，虽然买卖价差少。多个做市商组合起来。1000高频交易10个，市场buy单大，真正交易时候，HFT撤单。</p>
+<p>高频交易问题：</p>
+<ol>
+<li>虚幻流动性。提供的不是市场真正需要的，而是返佣制度下交易所规定的流动性，没有增加市场效率，为了流动性而提供。</li>
+<li>市场公平。闪电订单和NBBO。现在被美国市场禁止了，可以给HFT看订单簿。</li>
+</ol>
+<p><img src="../invest/materials/%E9%97%AA%E7%94%B5%E8%AE%A2%E5%8D%95.png" alt="闪电订单" /></p>
+<p>高频交易和自动化在竞争性市场中提供市场流动性，减少交易成本，让价格更有效，至少没增加波动性。</p>
+<p>美国市场分割，一个股票30多家交易所。</p>
+<p>中国是55制（一秒报单5次，一天5次）判断高频交易，比海外领先，海外没有统一订单簿。</p>
+<p>学术界对高频交易的作用理解。</p>
+<p>SEC和CFTC。</p>
+<h3 id="高频交易策略"><a class="header" href="#高频交易策略">高频交易策略</a></h3>
+<ol>
+<li>做市交易策略：最主流策略，做市商同时在订单簿两侧提交限价单，为那些想成交的市场参与者提供流动性，自身获取买卖价差做盈利。做市商放买卖单的价差取决于：订单处理成本，存货成本，信息成本，比如让买卖单覆盖成本。</li>
+<li>方向交易策略：预测价格走势，持仓很短。订单流动信号交易。</li>
+<li>偏差交易策略：利用市场价格短暂不平衡进行交易。也叫套利策略。考虑了时间回归维度后，会有风险。</li>
+<li>事件交易策略：新闻，事件等。价格过度反应。文本分析。</li>
+</ol>
+<h2 id="4-市场微观策略"><a class="header" href="#4-市场微观策略">4. 市场微观策略</a></h2>
+<ol>
+<li>全市场最优报价策略。NBBO（National Best Bid and Offer）交易指令和订单转移。</li>
+<li>闪电交易。Flash Trade 闪电订单。不公平，你的订单会被做市商看到。在美国违法。交易者很难看到自己买的价格。买单推高，卖单推低。</li>
+<li>快速行情。你看到的行情是我的成交。错过市场最优买卖价。做市商挂之前买卖单，挂上去就成交了，成流动性提供者到了消耗者，赚不到返佣了。</li>
+<li>幌骗交易。Spoofing。想买时候，先卖。想买时候，先卖。下达虚假订单-&gt;制造虚假信号-&gt;市场反应-&gt;撤销幌骗订单。操纵市场。</li>
+<li>手续费返还。为了手续费返还，进行亏损交易。订单留在订单簿，就要提供流动性。消耗流动性和其他订单成交。所有人消耗流动性，没有价格了。</li>
+<li>冰山单。显示的订单量少，隐藏的多，分批展示，隐藏意图通过。交易所只展示一部分委托单。买1000手，每次100手，分了10次。高频可以推测出来。探测不出来，高频策略可能失效。</li>
+</ol>
+<h2 id="5-高频交易案例"><a class="header" href="#5-高频交易案例">5. 高频交易案例</a></h2>
+<ol>
+<li>美股2010年闪电崩盘（2010年极短时间内剧烈波动）。因为HFT。高频交易做市商先买单，承接市场。后面卖单。助涨助跌没有承担做市商功能。对闪电崩盘无法形成统一见解，甚至相反。
+闪电崩盘（Flash Crash）与希腊债务危机（怪HFT）及幌骗交易（Spoofing-和HFT没关系），根源在于没办法拿到分割市场全部订单簿。</li>
+<li>光大证券2013年816乌龙指事件。180ETF套利。70亿资金几秒内上证指数5%涨幅。说明没有流动性，没有卖单，拔电源停止交易。整个不到2分钟。机构投资者可以第二天拿出70亿，当天倒闭。散户当天拿出真金白银。
+光大证券反而盈利了，证监会处罚严重，盈利没收。http://sf.ruc.edu.cn/publish/sf/alk/alfl/jr/98d3241b32624d398efa0f4abcb3a6ea.htm</li>
+</ol>
+<h2 id="6-金融监管"><a class="header" href="#6-金融监管">6. 金融监管</a></h2>
+<h3 id="美国对高频监管"><a class="header" href="#美国对高频监管">美国对高频监管</a></h3>
+<p>2010年闪电崩盘后才开始监管。闪电崩盘还没有确定原因。</p>
+<ol>
+<li>禁止闪电指令。</li>
+<li>禁止无审核通路。（越过中介直接交易所）</li>
+<li>巨量交易者识别。</li>
+<li>托管（co-location）。自己撮合放在交易所主机旁边。</li>
+</ol>
+<h3 id="德国对高频监管"><a class="header" href="#德国对高频监管">德国对高频监管</a></h3>
+<p>出台最早，欧洲的。高频交易监管领先，非常严格。其他国家先参考德国。</p>
+<ol>
+<li>高频交易商纳入了监管对象。市场准入制。做市义务。</li>
+<li>建立有效的风控系统。</li>
+<li>界定了高频交易市场操纵行为。试探性指令 ping orders。误导性交易。引发动量交易，分层和欺诈交易。</li>
+<li>指令成交比例，最小报价单位限制。报价单位很难的题，没有参考。</li>
+</ol>
+<h3 id="中国对高频监管"><a class="header" href="#中国对高频监管">中国对高频监管</a></h3>
+<ol>
+<li>认识功能和作用。</li>
+<li>实现公司和个人进行备案，做市商必须做市业务。</li>
+<li>保证公平性。</li>
+<li>预防市场操纵。</li>
+<li>跨市场联动。</li>
+</ol>
+<h2 id="7-海外市场微观结构发展趋势"><a class="header" href="#7-海外市场微观结构发展趋势">7. 海外市场微观结构发展趋势</a></h2>
+<p>欧盟MiFID （金融工具市场指令），核心思路引入竞争。改变了欧盟资本市场微观结构。MiFID I（2007年生效），MiFID II（2018年生效），MiFID
+III 动态展望（2025年更新趋势）。</p>
+<p>市场质量提高：1. 买卖价差 2. 市场深度 3. 交易成本降低 4. 交易执行时间</p>
+<p>Markets in Financial Instruments Directive - MiFID</p>
+<p>美国Reg NMS法案（美国全国市场系统规则Regulation NMS）：引入新的竞争对手。最优价格最为唯一执行标准。买最便宜卖最贵。公平性和市场效率之间达到新的平衡。</p>
+<p>【交易所竞争】衍生品合约不具有可互换性：CME的垄断性，CME买入CME卖出，不能在CBOT卖出。股票可以30多家交易，可互换性。理论上探讨，还未形成趋势。股票交易所竞争激烈。</p>
+<p>【清算所竞争】清算可互操作性：任何产品清算可不同清算所清算。会被引入竞争。</p>
+<p>监管美国市场走到了前列。</p>
+<p>金融创新需要监管。</p>
+<h1 id="彼得林奇三部曲"><a class="header" href="#彼得林奇三部曲">彼得林奇三部曲</a></h1>
+<p>战胜华尔街
+除了非常富有的家庭，不投资股票，根本不可能长久维持高质量的晚年生活水平。</p>
+<p>在所有的投资决策中，最初对追求增值的股票与追求稳定收入的债券的组合比例分配决策，对于一个家庭未来
+能够拥有多少财富影响最为深远。</p>
+<p>万一通货膨胀率上升为两位数，那么国债价格就至少会下跌20%~
+30%。这种情况可让人进退两难：如果卖掉债券，必然会亏损；如果一直持有30年到期为止，本金肯定能够拿回来，但现在这些本金的购买力却只有原
+来的一部分而已。</p>
+<p>投资长期债券最大的风险就是利率上升。利率一开始上升，债券基金和期限相同的个别债券价值下跌得一样
+惨。</p>
+<p>直接投资7年期国库券，7年后一定能取回本金；但购买中期国债基金就不一定能够保证你足额收回本金。你出售时的基金单位价格由当日债券市场行情决定，而行情随时都在波动，有可能你只好低价卖出，承担亏损。</p>
+<p>吉利美Ginnie 债券：按揭抵押债券</p>
+<p>沃伦·巴菲特曾经警告投资者，那些无法看着自己的股票大跌、市值损失50%却仍然继续坚持持有的投资者，
+就不要投资股票。</p>
+<p>如果你想要自己的资产未来比现在增值得更多，那么你就应该把大部分资产投资到股票上。即使是未来两三年，甚至5年是大熊市，股市跌得让你后悔根本不应该买股票，你仍然应该把大部分资产投资到股票上</p>
+<p>兴业策略团队的书。</p>
+<p>立讯精密、恒立液压、爱尔眼科，海螺水泥</p>
+<p>贵州茅台、万科、恒瑞医药、格力电器</p>
+<p>核心资产投资策略</p>
+<p>为什么中国股市会在当前阶段诞生核心资产，为什么核心资产在长期会实现很好的超额收益？</p>
+<p>印度股市30年的长牛行情</p>
+<p>张忆东：提出者。</p>
+<p>核心资产就是中国各个行业及细分领域内具备核心竞争力、公司财务指标优秀、治理稳健的龙头企业。这是核心资产最准确、最完善、最本质的内涵，其他所有的描述都可视为对这三点的解释和补充。</p>
+<p>恒立液压、宁德时代等公司已经成为全球产业链的
+细分行业龙头企业；立讯精密、环旭电子等TMT类公司也都进入了外资买入A股占比前50的公司名单中；
+300开头的创业板公司也不在少数，如爱尔眼科、聚光科技、华测检测等。</p>
+<p>区域垄断特点的海螺水泥、拥有传统医药处方的片仔癀等也都是中国的核心资产。</p>
+<p>上海机场为例，它并不需要做到世界第一、全球吞吐量最大，由于仅仅长三角两省一市的经济体量就顶得上欧洲的某一个国家了，所以上海机场能够成为核心资产。</p>
+<p>巨大的经济体量还能够支撑首都机场、白云机场成为核心资产。</p>
+<p>海螺水泥，虽然有运输半径限制，但其半径覆盖区域内的经济体量已经足以支撑它成为核心资产，
+同理，华新水泥也能成为核心资产。由此可知，我国能够诞生的核心资产数量理应比绝大多数市场更多。</p>
+<p>标普新兴市场BMI指数 S&amp;P Emerging BMI</p>
+<p>10年没涨，仍然处在3000点附近的中国股市，其中的核心资产还没有被外资“分割完毕”，对全球而言是非常稀缺的资产。</p>
+<p>大盘10年前3000点现在还是3000点，但是其中优质资产的价值都已经翻了几倍。总量和结构的区分越来越大，未来将出现一种现象：上证综指可能并非牛市，但是核心资产已经进入了一轮长牛。</p>
+<p>印度Sensex30从1992年自由化改革至今涨幅为14倍，综合考虑收益与风险后近20年内的收益风险比为56.84%，在全球重要股指中排名第一。中印两国均为新兴市场国家中经济高速增长的国家，印度在长达十几年时间内保持长牛行情，中国可以借鉴。</p>
+<p>韩国KOSPI200：https://en.wikipedia.org/wiki/KOSPI （KRX交易所）
+日经225:
+台湾加权指数TAIEX：台积电核心
+印度孟买Sensex指数 孟买证券交易所（BSE）
+俄罗斯 RTS指数：
+泰国SET指数 泰交所：
+印尼雅加达JKSE综合指数：
+智利：
+墨西哥BOLSA指数：
+巴西圣保罗Bovespa指数：</p>
+<h1 id="护肤品全解码"><a class="header" href="#护肤品全解码">护肤品全解码</a></h1>
+<p>雅漾 Avene
+贝德玛 Bioderma
+丝塔芙 Cetaphil
+娇诗韵 Clarins
+倩碧 Clinique
+多芬 Dove
+雅诗兰黛 Elsee Lauder
+Fancl
+佰草集 Herborist
+珂诺诗 Korres
+魅可 MAC
+奥蜜思 Orbis
+植村秀 Shu Uemura
+雪花秀 Sulwhasoo
+茱莉蔻 Jurlique
+嘉娜宝 Kanebo
+科颜氏 Kiehl
+高丝 Kose
+曼秀雷敦 mentholatum
+无印良品 Muji
+宝丽 Pola
+碧欧泉 Biotherm
+香奈儿 Chanel
+博润特医生 dr brandt</p>
+<p>艾维诺 https://www.kenvuebrands.com/cn/aveeno 科赴中国</p>
+<p>旁氏 https://www.unilever.com.cn/brands/beauty-wellbeing/ponds/</p>
+<p>百雀羚 https://www.pechoin.com/</p>
+<p>半亩花田 https://www.banmuhuatian.com/</p>
+<p>珀莱雅 https://www.proya.com/</p>
+<h1 id="金钱游戏"><a class="header" href="#金钱游戏">金钱游戏</a></h1>
+<p>“如果你不够了解自己，市场会帮助你用昂贵的代价做到。”</p>
+<p>“富达基金公司创始人爱德华·约翰逊（Edward Johnson）”</p>
+<p>“游戏的目标就是赚钱，而且是越多越好。”</p>
+<p>“投资就是一种寻找自我和发现自我的方式，只不过这种方式的代价可能太大了。”</p>
+<p>“真正的基金经理，骨子里就藏着投资组合，这些野心勃勃的投资家，更像是企业家：有想法，有主见，他们喜
+欢新的创业理念，再一呼百应，创建新企业或开办新项目。”</p>
+<p>“如果真正了解市场的运行，它们就会进入你的意识，这样，了解市场就会变成本能，它们的一举一动便尽在你
+的掌握之中。”</p>
+<p>“一群男人的行为，和一个女人没什么两样。研究女性是进入市场的最佳准备。好在招聘一个助理去认真研究一番女人，还不算困难。”</p>
+<p>“资本主义的生存动力，就是把快乐推迟到永远向后推迟的无限未来”。”</p>
+<h1 id="区块链学习资料"><a class="header" href="#区块链学习资料">区块链学习资料</a></h1>
+<h2 id="书籍"><a class="header" href="#书籍">书籍</a></h2>
+<p>《精通比特币》 Mastering Bitcoin: Programming the Open Blockchain 3rd Edition Andreas M.
+Antonopoulos https://bitcoinbook.hankmo.com/</p>
+<p>《精通以太坊》 Mastering Ethereum: Building Smart Contracts and DApps 1st Edition Andreas M. Antonopoulos</p>
+<p>Mastering the Lightning Network: A Second Layer Blockchain Protocol for Instant Bitcoin Payments 1st Edition Andreas M.
+Antonopoulos https://aantonop.com/books/</p>
+<p>《精通区块链》 Mastering Blockchain: Unlocking the Power of Cryptocurrencies, Smart Contracts, and Decentralized
+Applications Lorne Lantz</p>
+<p>《区块链原理、设计与应用》杨保华 https://yeasy.gitbook.io/blockchain_guide/</p>
+<p>《区块链技术指南》 邹均</p>
+<p>《数字金融 未来已来》罗玫</p>
+<h2 id="课程"><a class="header" href="#课程">课程</a></h2>
+<p>斯坦福大学《区块链和加密货币》https://www.bilibili.com/video/BV1sT411D7t3</p>
+<p>西南财经大学 罗旭斌 区块链技术导论：https://www.xuetangx.com/course/swufe08091012394/21440594</p>
+<p>清华大学 罗玫 区块链和加密数字货币 https://www.xuetangx.com/course/thu12021002731/21557740</p>
+<p>山东大学 孔兰菊 区块链原理与技术 https://www.xuetangx.com/learn/sdu08071004984/sdu08071004984/26286869/video/66509838</p>
+<p>极客时间-深入浅出区块链 https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E5%8C%BA%E5%9D%97%E9%93%BE/</p>
+<p>北京大学肖臻老师《区块链技术与应用》：https://www.bilibili.com/video/BV1Vt411X7JF/</p>
+<h2 id="白皮书"><a class="header" href="#白皮书">白皮书</a></h2>
+<p>BTC：https://bitcoin.org/files/bitcoin-paper/bitcoin_zh_cn.pdf</p>
+<p>ETH：https://ethereum.org/zh/whitepaper/</p>
+<p>SOL：https://solana.com/solana-whitepaper.pdf</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../investment/read/books/intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../../investment/read/weeklyonstock.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../investment/read/books/intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../../investment/read/weeklyonstock.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../../../mermaid.min.js"></script>
+        <script type="text/javascript" src="../../../mermaid-init.js"></script>
+        <script type="text/javascript" src="../../../smart-anchor.js"></script>
+        <script src="https://utteranc.es/client.js"
+        repo="RustMagazine/rust_magazine_2021"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+
+    </body>
+</html>

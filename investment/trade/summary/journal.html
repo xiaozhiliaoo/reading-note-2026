@@ -1,0 +1,625 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>投资杂记 - 阅读笔记</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="阅读笔记">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../investment/intro.html"><strong aria-hidden="true">1.</strong> 投资</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/philosophy/intro.html"><strong aria-hidden="true">1.1.</strong> 投资哲学</a></li><li class="chapter-item "><a href="../../../investment/strategy/intro.html"><strong aria-hidden="true">1.2.</strong> 投资策略</a></li><li class="chapter-item "><a href="../../../investment/analysis/intro.html"><strong aria-hidden="true">1.3.</strong> 投资分析</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/analysis/financial-report.html"><strong aria-hidden="true">1.3.1.</strong> 财报分析</a></li><li class="chapter-item "><a href="../../../investment/analysis/company/intro.html"><strong aria-hidden="true">1.3.2.</strong> 公司分析</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/analysis/company/601888.html"><strong aria-hidden="true">1.3.2.1.</strong> 中国中免</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../investment/trade/intro.html"><strong aria-hidden="true">1.4.</strong> 投资交易</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/trade/daily-thinking.html"><strong aria-hidden="true">1.4.1.</strong> 投资日思</a></li><li class="chapter-item "><a href="../../../investment/trade/trade-record.html"><strong aria-hidden="true">1.4.2.</strong> 交易记录</a></li><li class="chapter-item expanded "><a href="../../../investment/trade/summary.html"><strong aria-hidden="true">1.4.3.</strong> 投资总结</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/trade/summary/three-year-summary.html"><strong aria-hidden="true">1.4.3.1.</strong> 2024-2026这三年</a></li><li class="chapter-item expanded "><a href="../../../investment/trade/summary/journal.html" class="active"><strong aria-hidden="true">1.4.3.2.</strong> 投资杂记</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../investment/read/intro.html"><strong aria-hidden="true">1.5.</strong> 投资阅读</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/read/books/intro.html"><strong aria-hidden="true">1.5.1.</strong> 读书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/read/books/journal.html"><strong aria-hidden="true">1.5.1.1.</strong> 笔记杂记</a></li></ol></li><li class="chapter-item "><a href="../../../investment/read/weeklyonstock.html"><strong aria-hidden="true">1.5.2.</strong> 证券市场周刊</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../investment/read/weeklyonstock-3090.html"><strong aria-hidden="true">1.5.2.1.</strong> 2026年10月17日-第40期-总3090期</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../../health/intro.html"><strong aria-hidden="true">2.</strong> 健康</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">阅读笔记</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/xiaozhiliaoo/reading-note-2026" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="2026投资杂记"><a class="header" href="#2026投资杂记">2026投资杂记</a></h1>
+<h1 id="白酒板块"><a class="header" href="#白酒板块">白酒板块</a></h1>
+<p>白酒板块的表现却不尽如人意。这主要归因于白酒市场的产能过剩、需求疲软以及消费结构的转变。</p>
+<p>贵州茅台 2010 年的 499 元/瓶增长到 2024 年的1169 元/瓶</p>
+<p>茅五庐</p>
+<p>板块估值处于低位。</p>
+<p>估值具有较高的安全边际，绝对收益空间已经显现。</p>
+<p>龙头酒企的股息率（TTM）已经逐渐攀升至历史高位</p>
+<p>泸州老窖：国窖1573</p>
+<p>五粮液：普五八代</p>
+<p>茅台：飞天茅台 散装和原装</p>
+<p>T9品牌白酒：茅台 五粮液 洋河 汾酒 泸州老窖 古井贡酒 郎酒 习酒 剑南春</p>
+<p>白酒行业具有明显的周期性，且每次都能在冲击后复苏并创新高，展现出极强的韧性。</p>
+<p>白酒行业整体仍处于深度调整阶段。</p>
+<p>白酒行业大致经历了三个主要周期：
+1998-2003年的调整期源于亚洲金融危机和山西假酒案；
+2004-2012年的黄金期得益于经济高速发展和政务消费拉动；
+2013-2015年的深度调整则是因为“八项规定”出台。每一轮周期过后，行业都能较快复苏，甚至创出新高。
+2024-2025年，国务院在2025年5月2日发布修订后的《党政机关厉行节约反对浪费条例》。史上最严”禁酒令“。限制“高档酒水”升级为全面禁酒。</p>
+<p>白酒产业长周期时间产业的价值属性和螺旋式上升趋势的产业发展底层逻辑从未改变。</p>
+<p>中证酒指数</p>
+<h1 id="芯片"><a class="header" href="#芯片">芯片</a></h1>
+<p>申万行业分类：计算机、电子、通信
+中信行业分类：计算机、电子、通信
+中证行业分类：信息技术 -&gt; 计算机、电子、半导体</p>
+<p>寒武纪：信息技术 -&gt; 半导体 -&gt; 集成电路 -&gt; 集成电路设计 (中证)
+寒武纪：电子 -&gt; 半导体 -&gt; 数字芯片设计 (申万)</p>
+<h1 id="投资"><a class="header" href="#投资">投资</a></h1>
+<p>指数作为投资基础，占比应该50%。获取市场平均收益。
+其余进行价值投资。获取超额收益。</p>
+<p>个股投资选股要求：
+行业：
+公司：
+知名度：
+消费，医疗，科技 里面选。</p>
+<h1 id="投资研究大纲"><a class="header" href="#投资研究大纲">投资研究大纲</a></h1>
+<p>我希望成为这样的投资者：全球-&gt; 策略 -&gt; 行业 -&gt; 个股</p>
+<p>全球指数研究-----全球化，</p>
+<p>资产配置+金融产品+指数投资</p>
+<p>学习所有的金融产品（包括币圈）。</p>
+<p>期货，期权，合约，杠杆，黄金。等等。熟悉主流市场的交易方法。</p>
+<p>模拟期货投资。</p>
+<p>模拟合约投资。</p>
+<p>核心投资资产：</p>
+<ol>
+<li>现金。</li>
+<li>房地产。</li>
+<li>债券。</li>
+<li>股票。</li>
+<li>大宗商品。</li>
+<li>基金。</li>
+<li>保险。</li>
+<li>外汇。</li>
+<li>衍生品。</li>
+<li>加密资产/区块链。</li>
+<li>另类投资：私募股权，实物资产，REITS，艺术品</li>
+</ol>
+<h1 id="交易所基础"><a class="header" href="#交易所基础">交易所基础</a></h1>
+<p>三个证券交易所：上交所：sse 深交所：szse 北交所：bse
+五大商品交易所：郑交所：zce 大交所：dce 上期所：shfe 中金所：cffex（China Financial Futures Exchange） 广期所：gfex（）</p>
+<p>ce：Commodity Exchange
+se：stock exchange
+fe：future exchange</p>
+<p>上交所债券：https://bond.sse.com.cn/</p>
+<p>上交所期权：https://option.sse.com.cn/</p>
+<p>上交所期权学院：https://option.sse.com.cn/#/baike/book</p>
+<p>上交所ETF： https://etf.sse.com.cn/</p>
+<p>指数小课堂： https://www.csindex.com.cn/#/education/college</p>
+<p>中金所期货期权学院：https://www.e-cffex.com.cn/</p>
+<p>中国期货业协会：http://edu.cfachina.org/zsyd/qhabc/qsjs/index.html</p>
+<p>深交所投资者教育：https://investor.szse.cn/</p>
+<p>上交所投资者教育：https://edu.sse.com.cn/</p>
+<p>基金纪录片：https://www.amac.org.cn/hdjl/jjjlp/</p>
+<p>北交所投资者教育：https://www.bse.cn/invest/product.html</p>
+<p>大连商品交易所学习平台：http://qhxy.dce.com.cn/dcetj/xxzx27/dcetsg38/index.html</p>
+<p>科创板：https://edu.sse.com.cn/tib/</p>
+<p>上金所黄金教程：https://www.sge.com.cn/tzzjy/tjyd  GOLD Exchange</p>
+<p>中国证券监督管理委员会（http://www.csrc.gov.cn）
+中国期货业协会（http://www.cfachina.org）
+中国证券业协会（http://www.sac.net.cn）
+中国上市公司协会（http://www.capco.org.cn）
+中国投资者网（http://www.investor.org.cn）</p>
+<p>上海证券交易所（http://www.sse.com.cn）
+深圳证券交易所（http://www.szse.cn）
+北京证券交易所（http://www.bse.cn）
+上海期货交易所（http://www.shfe.com.cn）
+郑州商品交易所（http://www.czce.com.cn）
+大连商品交易所（http://www.dce.com.cn）
+广州期货交易所（http://www.gfex.com.cn）</p>
+<p>中国期货市场监控中心（http://www.cfmmc.cn）
+中证指数有限公司（http://www.csindex.com.cn）
+中证商品指数有限责任公司（http://www.ccidx.com）
+中国债券信息网-中央结算公司（http://www.chinabond.com.cn）
+资本市场学院（http://www.ccmi.edu.cn）</p>
+<p>中金所相关网站</p>
+<p>中金所期货期权学院（http://www.e-cffex.com.cn/）
+中金所技术公司（http://www.cffexit.com.cn/）
+中金所数据有限公司（http://www.cffexdt.com.cn/）</p>
+<h1 id="养老金标的选择"><a class="header" href="#养老金标的选择">养老金标的选择</a></h1>
+<p>1.2W打算买四个指数基金。指数之间公司不要有重叠。</p>
+<p>分别是
+上交所：上证50，科创板50。
+深交所：深圳100，创业板指。</p>
+<p>深证成指 399001 500家公司：深证成指由深圳证券市场中市值大、流动性好的500只A股组成，定位于深交所标尺指数，反映深交所多层次市场的整体表现。
+深证综指 399106 全部公司：深证综指由深圳证券交易所主板、创业板上市的全部股票组成，反映深交所上市证券价格的综合变动情况以及市场总体走势。
+深圳100 399330 100家公司：深证100由深圳证券市场中市值大、流动性好的100只股票组成，定位旗舰型指数，表征创新型、成长型龙头企业。
+创业板指 399006 100家公司：创业板指由创业板中市值大、流动性好的100只股票组成，反映创业板市场的运行情况。
+创业板50 399673 50家公司：创业板50指数由创业板市场中日均成交额较大的50只股票组成。</p>
+<p>上证50 000016 上证50指数以上证180指数样本为样本空间，挑选上海证券市场规模大、流动性好的最具代表性的50只证券作为样本，综合反映上海证券市场最具市场影响力的一批龙头企业的整体表现。
+科创50 000688 上证科创板50成份指数由上海证券交易所科创板中市值大、流动性好的50只证券组成，反映最具市场代表性的一批科创企业的整体表现。</p>
+<p>深市“1+2”核心指数：</p>
+<p>深证成指：深交所标尺指数，代表中国新兴成长性企业。</p>
+<p>创业板指：深交所特色指数，刻画中国战略新兴产业和创业创新企业。</p>
+<p>深证100：深交所旗舰产品指数，表征中国创新型、成长型龙头企业。</p>
+<p>选择依据：看规模。</p>
+<p>深交所：核心1+2指数：深证成指，创业板指，深证100</p>
+<p>同花顺：查看A股指数成分股，文财选股，美股三个指数，港股，英股成分股。资讯：四大报刊头条，偏国内。强在指数看股。F10有诊股功能。
+富途：查询全球指数对应的公司比同花顺范围广，查询A股指数也方便筛选，但是指数不如同花顺多，不如同花顺可以一起看，美股ETF，BTC
+ETF等，资讯偏国外，有财经日历。强在国外股票。
+东方财富通：查看全球指数走势，选股器，并且资讯里面有研报，公告大全，资讯大全，有财经日历。数据里面有宏观数据，全球的经济数据。强在资讯和数据。F10有估值分析。</p>
+<h1 id="中国外汇交易中心"><a class="header" href="#中国外汇交易中心">中国外汇交易中心</a></h1>
+<p>https://iftp.chinamoney.com.cn/chinese/</p>
+<p>黄金： https://iftp.chinamoney.com.cn/chinese/goldmain/</p>
+<h1 id="中证指数-投教基地"><a class="header" href="#中证指数-投教基地">中证指数-投教基地</a></h1>
+<p>https://www.csindex.com.cn/#/education/college</p>
+<h1 id="量化投资策略"><a class="header" href="#量化投资策略">量化投资策略</a></h1>
+<p>马丁策略：亏损后加倍下注，在下一次获胜时能够弥补之前的亏损。分批买入，一次卖出。
+网格策略：不加注的马丁策略。自动高抛低收。全部卖了。
+无限网格策略：上涨行情中确保握有等值的计价货币资产。使用无限网格策略，用户无论卖多少次，还是拥有与上一个仓位等值的资产。只卖本金的部分。
+定投策略：不按空间涨跌加仓，按照固定时间加仓。
+智能持仓：多元持仓，分散风险。</p>
+<h1 id="akshare"><a class="header" href="#akshare">Akshare</a></h1>
+<p>1.对比格力电器，招商银行，相比较上证指数和上证50，沪深300，中证500的年华收益率差距，数据越长越好。并且分析任意时间范围内的年华收益率。并且验证真实性。</p>
+<p>2.还有美股：华盛顿邮报，可口可乐，中美能源公司，北方铁路，苹果。</p>
+<p>3.对比全球指数收益率。</p>
+<p>4.找出A股十年十倍的公司。并且从每一年开始累积。</p>
+<h1 id="etf全球"><a class="header" href="#etf全球">ETF全球</a></h1>
+<p>全球国家</p>
+<p>境外机构投资者 (FII)</p>
+<p>E7: 新兴七国 Emerging 7：中国、印度、巴西、墨西哥、俄罗斯、印度尼西亚及土耳其</p>
+<p>金砖五国：巴西，印度，中国，俄罗斯，南非
+亚洲四小龙：韩国，台湾，新加坡，香港
+亚洲四小虎：印度尼西亚，泰国，马来西亚，菲律宾
+G7:美国、德国、英国、法国、日本、意大利、加拿大
+G20：G7 + 金砖五国 + 七个重要经济体（墨西哥、阿根廷、土耳其、韩国、印度尼西亚、澳大利亚、沙特阿拉伯）+ 两个区域组织（欧盟，非洲联盟）
+N11:  发达国家（韩国），新兴工业化国家（墨西哥，伊朗，土耳其，菲律宾，印度尼西亚），发展中国家（孟加拉国，埃及，尼日利亚，巴基斯坦，越南）
+第一世界西方集团：美国、韩国、加拿大、澳大利亚、新西兰等及欧盟的所有国家
+第二世界东方集团：东方集团苏联为首的东方集团国家（主要集中在东欧），如波兰、捷克斯洛伐克、罗马尼亚、保加利亚
+第三世界发展中国家：亚洲、非洲、中南美洲的发展中国家
+新兴工业化国家：
+亚洲：台湾、大韩民国、新加坡、英属香港
+美洲：墨西哥、巴西
+欧洲：希腊、葡萄牙、西班牙、南斯拉夫</p>
+<p>EAFE（Europe，Australia and Far East）非美发达国家或地区市场
+Morgan Stanley Capital International 摩根士丹利资本国际
+MSCI BIC（巴西，印度，中国）
+MSCI World（全球指数 (仅发达市场) ）
+MSCI EAFE（非美发达国家或地区市场）
+MSCI EM（Emerging Markets -新兴市场）
+MSCI Emerging Markets IMI（MSCI Emerging Markets Investable Market Index）
+MSCI ACWI （全球市场指数 All Country World Index）
+CRSP US Total Market
+MSCI GIMI 全球可投资指数
+MSCI A50</p>
+<h1 id="考试认证"><a class="header" href="#考试认证">考试认证</a></h1>
+<p>期货从业人员资格考试</p>
+<p>全国黄金交易从业水平考试</p>
+<p>https://www.sge.com.cn/jjsnotice/10005882</p>
+<p>上海金白皮书：https://www.sge.com.cn/static/pdf/32861.pdf</p>
+<p>参考教材-《黄金市场基础知识与交易实务（2020-2021年版）》
+https://c.exam-sp.com/t/e/sge/noticeShare?id=81262342a073eb9ba963c0f9fffaeabe088042e81e62d73f12242daed3e7f42a&amp;type=2</p>
+<p>新版教材的修订内容主要体现在：
+1、增加《上海黄金交易所会员管理办法（2019修订版）》和《上海黄金交易所违规处理办法（2019修订版）》等制度规则，熊猫金币合约、沪纽金合约、“上海银”定价交易等创新产品业务介绍；
+2、更新相关合约的延期补偿费率、交易时间和实物质量标准等内容，市场数据一般更新至2019年12月。</p>
+<h1 id="中国期货业协会-期货投教"><a class="header" href="#中国期货业协会-期货投教">中国期货业协会-期货投教</a></h1>
+<p>http://edu.cfachina.org/</p>
+<p>适当性考试：https://www.cfachina.org/servicesupport/examination/suitabilitytest/</p>
+<h1 id="上交所期权"><a class="header" href="#上交所期权">上交所期权</a></h1>
+<h2 id="期权孤独九剑"><a class="header" href="#期权孤独九剑">期权孤独九剑</a></h2>
+<h2 id="期权abc"><a class="header" href="#期权abc">期权ABC</a></h2>
+<p>期权ABC</p>
+<p>权利金：定金的概念。购买的权力。</p>
+<p>最早的商品 期权 郁金香期权。</p>
+<p>认购期权：买方权利方，损失权利金。看涨。跌了可以不买了，损失权利金。
+买认购期权：指定时间买入股票。虚值期权可以不行权。损失权利金。
+卖认购期权：指定时间卖出股票。卖不卖买方说了算。</p>
+<p>认沽期权：买方权利方，指定时间卖给卖方义务方。股票上涨了，可以不卖了，损失权利金。跌了不愁卖。
+买认沽期权：
+卖认沽期权：</p>
+<p>一方损失就是一方盈利。</p>
+<p>盈亏平衡点。</p>
+<p>股票做空工具：融券，认沽期权。
+股票做多工具：融资。</p>
+<p>CBOE</p>
+<p>股票期权活跃度最高。</p>
+<p>未来买卖权利达成合约。</p>
+<p>买方：权利方。卖方：义务方。</p>
+<p>认购期权，欧式期权，虚值期权</p>
+<p>欧式：到期日行权 美式：到期日之前任意时间行权。</p>
+<p>买期权，其实买了合约。</p>
+<p>挂合约交易所决定的。</p>
+<p>期货：权利和义务对等。
+期权：权利和义务不对等。</p>
+<p>第七集：期权与期货</p>
+<p>风险对冲，套利，方向性交易，组合策略</p>
+<p>期权 卖方交保证金。期货 双方均需要保证金。</p>
+<p>第八集：股票期权与权证</p>
+<p>权证必须有发行主体。</p>
+<p>权证是现货交易。</p>
+<p>第九集：行权交收</p>
+<p>实值期权不一定能赚钱，因为T+2才能卖出。</p>
+<p>第十集：股票期权的投资者适当性管理</p>
+<p>五有一无：
+三级准入：
+一级：持有股票，卖出认购期权（备兑开仓）或买入认沽期权（保险策略）
+二级：不持有股票买入期权。
+三级：缴纳保证金卖出期权。成为期权义务方。</p>
+<p>第十一集：股票期权的价格</p>
+<p>期权：给权利定价。</p>
+<p>期权类比于保险。</p>
+<p>行权价越高，风险越高。</p>
+<p>时间越短，越便宜。和保费一样。</p>
+<p>第十二集：股票期权对投资者的用途</p>
+<ol>
+<li>为股票或现金买保险。持有股票买入认沽期权进行保险。持有现金买入认购期权。</li>
+<li>降低买入成本。卖出认沽期权。</li>
+<li>赚取时间价值，增强持股收益。持有股票觉得上不大，卖出股票大于当前股价的认购期权。赚权利金。赚取虚值期权的时间价值。</li>
+<li>进行杠杆性看多或看空的方向性交易。</li>
+<li>通过组合策略交易，形成不同的风险和收益组合。4种基本头寸组成不同的策略。</li>
+</ol>
+<p>第十三集：股票期权的买方风险</p>
+<p>买方锁定了损失，但是权利金可能全部损失。血本无归。</p>
+<p>理论：风险有限，权利无限。实际投资：风险很大。</p>
+<p>第十四集：股票期权的卖方风险</p>
+<p>卖方遇到上不封顶的风险。亏损无限无限。</p>
+<p>卖出到期日时间，可以安稳收入权利金。类似于保险公司，收取保费。</p>
+<p>第十五集：新技能之巴菲特的优雅</p>
+<p>买入认沽期权投资者觉得cola股价会降低到35美元。锁定了35美元卖股票权利。
+到时候35美元以上，买方不会以35美元卖。巴菲特赚到750w权利金。如果跌到35美元，巴菲特以35美元买cola。只有cola跌破33.5美元才真正亏损。
+策略：现金担保卖出认沽期权。判断后市不会大跌，一定程度愿意低价持有股票。</p>
+<p>希望下跌买入股票。
+高抛低吸。</p>
+<p>第十六集：新技能之长期投资必备良器</p>
+<p>备兑开仓策略：持有股票（备兑）+ 定期卖出认购期权。反复卖认购期权获得股票的租金。</p>
+<p>第十七集：新技能之为股票买保险</p>
+<p>保险策略：股票保险。保护性买入认沽策略。持有股票同时买入认沽期权。保留上行收益，也防范下跌风险。股价上涨保险不起作用，保费不会退，下跌才起作用。</p>
+<p>衣领策略：持有股票，买入认沽期权+卖出认购期权。给备兑开仓买入下跌保护，也给保险策略降低保费。</p>
+<p>第十八集：新技能之以小博大的杠杆效应</p>
+<p>杠杆性做多/做空。</p>
+<p>买期权就是锁定未来买卖价。</p>
+<p>未来股价会上涨，自有资金不足，买入认购期权本质在加杠杆。</p>
+<p>权利金金额比股票便宜很多。</p>
+<p>前提对后市看涨或看跌。</p>
+<p>第十九集：新技能之卖方收租</p>
+<p>预期后市不会大涨，也不会大跌，可以用收入策略。</p>
+<p>适当者管理的三级权限。</p>
+<p>和备兑开仓不同在于不需要持有标的证券。
+备兑开仓是特殊一种情况。
+只有义务没有权利，要交保证金，风险较大，在三级权限。</p>
+<p>温和看空后市，不会上涨：卖出认购期权。
+温和看多后市，不会下跌：卖出认沽期权。长期看好标的证券，愿意以低价买入。巴菲特常用技巧。保证金风险，流动性风险等。</p>
+<p>第二十集：新技能之上涨下跌两不误</p>
+<p>组合策略是组合四种基本策略。</p>
+<p>不知道涨跌：跨式策略。</p>
+<p>买入跨式
+卖出跨式</p>
+<p>无法判断涨跌时候用。</p>
+<p>小幅波动或者不动，可以卖出跨式。
+大幅波动，可以买入跨式。
+虽然不看涨跌方向，但对涨跌幅判断要求更高。
+买入跨式策略至少二级投资者（不需要标的）。卖出跨式至少三级投资者（需要卖出）。</p>
+<h1 id="中金所期货期权学院"><a class="header" href="#中金所期货期权学院">中金所期货期权学院</a></h1>
+<p>https://www.e-cffex.com.cn/</p>
+<h2 id="秒懂reits"><a class="header" href="#秒懂reits">秒懂REITs</a></h2>
+<p>https://www.e-cffex.com.cn/r/cms/www/person/#/studyCourse?id=2656</p>
+<p>不动产信托基金。</p>
+<p>降低了投资不动产的门槛。</p>
+<p>国家基础设施。</p>
+<p>多元化资产配置。</p>
+<p>公募REITs试点首选基础设施领域。</p>
+<p>没有申购和赎回。</p>
+<p>PPP项目如何参与基础设施REITs</p>
+<p>PPP项目</p>
+<h1 id="深交所etf产品列表"><a class="header" href="#深交所etf产品列表">深交所ETF产品列表</a></h1>
+<p>https://www.szse.cn/market/product/list/all/index.html</p>
+<h1 id="上交所etf教程"><a class="header" href="#上交所etf教程">上交所ETF教程</a></h1>
+<p>https://etf.sse.com.cn/fund/video/investmentabc/c/5704758.shtml</p>
+<p>视频地址：https://etf.sse.com.cn/fund/video/</p>
+<p>ETF是指数投资工具。</p>
+<p>科创50ETF：
+科创50指数：https://www.sse.com.cn/market/sseindex/indexlist/basic/index.shtml?COMPANY_CODE=000688&amp;INDEX_Code=000688&amp;type=1</p>
+<p>MSCI 中国 A50 ETF：</p>
+<p>境外投资中国</p>
+<p>期现联动产品。</p>
+<p>芯片ETF：</p>
+<p>碳中和主题ETF：</p>
+<p>布局行业通过ETF。</p>
+<p>生物医药ETF</p>
+<p>人工智能ETF：</p>
+<p>光伏ETF：</p>
+<p>5GETF：</p>
+<p>新能源车ETF：</p>
+<p>中概互联网ETF：</p>
+<p>etf进行行业轮动，经济周期轮动</p>
+<p>主题包括多个行业，包括上下游。</p>
+<p>全球资产配置。</p>
+<p>个人投资者最有效投资债券渠道。</p>
+<p>合格债券投资者门槛高。国债期货门槛高。</p>
+<p>沪深300 流通市值占比</p>
+<p>什么是贝塔回报，什么是阿尔法回报。</p>
+<p>主题指数：长期发展趋势受益的产业</p>
+<p>沪深300，中证500都是价格指数。</p>
+<p>ESG投资理念</p>
+<p>指数是资本市场基础设施。</p>
+<p>定投有机会成本，没办法衡量机会成本。</p>
+<p>定投要走亏损的弯路，才能平摊成本迎来受益。</p>
+<p>定投微笑曲线，长期持有才能看出来。</p>
+<p>ETF大讲堂：
+1,指数基本知识</p>
+<p>2,指数化发展和ESG投资理念</p>
+<p>3,浅谈ETF</p>
+<p>4, ETF生命周期</p>
+<p>ETF最重要的是选择标的指数。</p>
+<p>5、ETF是如何运作投资的
+PCF</p>
+<p>ETF的PCF（Portfolio Composition File，申购赎回清单）是基金管理人在每个交易日开市前制作并公布的指导性文件，它指引投资者如何申购和赎回ETF份额。</p>
+<p>现金替代标志</p>
+<p>申购现金替代溢价比率</p>
+<p>赎回现金替代折价比率</p>
+<p>6、30分钟玩转ETF交易</p>
+<p>7，股票ETF主要类型及内涵</p>
+<p>9 债券ETF
+资产组合动态调整。
+门槛一万元。
+利率债和信用债
+短融ETF久期在120天左右，货币ETF在90天左右。等价于场内理财+。</p>
+<p>10 黄金ETF
+用证券账户买卖黄金。
+黄金随着美元价格上升而下跌。
+经济好，黄金跌。经济不好，黄金涨。
+加息经济好，黄金跌。以美元标价黄金。
+宽松货币政策，造成通货膨胀，导致黄金价格上升。
+黄金计价单位美元，美元影响黄金价格。
+美联储降息，黄金价格上涨。</p>
+<p>黄金T+D 属于保证金交易。
+纸黄金记账式交易。
+上海金集中定价合约 SHAU 与 Au9999 竞价合约对比？
+全球首个以人民币计价的黄金基准价格——“上海金”正式发布。</p>
+<p>金交所是全球最大的黄金现货交易所，所有交易均以人民币计价，并以存 于金交所的实物库存进行交割。然而，金交所的价格依旧来源于伦敦、纽
+约等
+其他交易场所的美元黄金基准价。</p>
+<p>11 货币ETF</p>
+<p>货币市场基金：一年内的金融产品。大额存单，银行理财等。</p>
+<p>货币ETF：场内货币基金。</p>
+<p>场外货币基金：余额宝。</p>
+<p>上交所ETF全国最大。</p>
+<p>规模，业绩，风险控制。</p>
+<p>12ETF投资策略介绍</p>
+<p>生命周期配置</p>
+<p>行业轮动：追涨杀跌。</p>
+<p>ETF定投应该仓位满，场外基金不会满，要留有现金。</p>
+<p>14、海外ETF创新介绍</p>
+<p>备兑策略</p>
+<p>Buffer ETF</p>
+<p>PBP ETF</p>
+<p>https://www.innovatoretfs.com/</p>
+<p>innovator发的最多的是Buffer ETF。</p>
+<h1 id="政治书籍"><a class="header" href="#政治书籍">政治书籍</a></h1>
+<p>世界是红的
+一本书看懂地缘世界
+中国权贵的死亡游戏- 薄熙来事件秘密报告
+权力密码—当历史遇见经济学
+资治通鉴</p>
+<p>读历史，制约人。不与之争。</p>
+<h1 id="纪录片"><a class="header" href="#纪录片">纪录片</a></h1>
+<p>加快形成新质生产力（学习）
+大国重器
+创新之路
+大国崛起
+华尔街
+货币
+资本的力量
+栋梁之材
+钢铁脊梁
+能源浪潮
+大市中国
+资本的力量
+中国股市记忆
+公司的力量
+互联网时代
+金砖之国
+国企备忘录
+激荡 1978-2008
+财富与梦想：中国股市1990—2010
+黄金时代
+人民币
+跨国并购
+亲历改革</p>
+<h1 id="视频"><a class="header" href="#视频">视频</a></h1>
+<p>林园投资视频 投资者教育系列： https://www.linyuan-invest.com/website/w/h?mt=2&amp;mc=48583775&amp;cc=46943794</p>
+<h1 id="程序化交易"><a class="header" href="#程序化交易">程序化交易</a></h1>
+<p>高频交易、量化交易、算法交易等都是程序化交易的不同形式。</p>
+<p>量化交易策略：因子投资，算法交易，统计套利，高频交易，趋势跟踪，做市策略。</p>
+<p>因子投资回答买什么？算法交易回答：怎么买？（拆单、择时、降低冲击成本）高频交易：多快能成交？</p>
+<h1 id="量化平台"><a class="header" href="#量化平台">量化平台</a></h1>
+<p>同花顺：SuperMind https://quant.10jqka.com.cn/</p>
+<p>聚宽：https://www.joinquant.com/</p>
+<h1 id="券商软件支持"><a class="header" href="#券商软件支持">券商软件支持</a></h1>
+<p>ptrade和qmt</p>
+<h1 id="国外量化平台"><a class="header" href="#国外量化平台">国外量化平台</a></h1>
+<p>OpenQuant、Apama、RightEdge</p>
+<p>数据源：Norgate Data 和 CSI Data</p>
+<p>https://github.com/quantopian</p>
+<p>https://zipline.ml4trading.io/</p>
+<p>pyfolio</p>
+<h1 id="量化基金"><a class="header" href="#量化基金">量化基金</a></h1>
+<p>AQR - Applied Quantitative Research</p>
+<h1 id="投资课程"><a class="header" href="#投资课程">投资课程</a></h1>
+<p>量化投资 央财 https://www.xuetangx.com/course/cufeP0251202310101/19324820</p>
+<p>金融风险管理——量化投资视角 暨南 https://www.xuetangx.com/course/jnu02031007495</p>
+<p>金融工程 北理工 https://www.xuetangx.com/course/yushu20201201/29596542</p>
+<p>金融工程 复旦 https://www.xuetangx.com/course/FDU02031000063/29593200</p>
+<p>投资分析与交易技术 对外 https://www.xuetangx.com/course/UIBEP02512023120701/29603070</p>
+<p>金融交易导论 清华 焦瑾璞 https://www.xuetangx.com/course/thu02031006612/29598014</p>
+<p>行为金融与投资 对外 https://www.xuetangx.com/course/UIBEP02511011467/29603862</p>
+<p>财务报表分析：投资者视角 央财 https://www.xuetangx.com/course/cufe12021008352/29601109</p>
+<p>证券投资分析 成都理工 https://www.xuetangx.com/course/CDUT02031000782/29594124</p>
+<p>资产定价与资产配置 上外 https://www.xuetangx.com/course/SISU02031015707/29606472</p>
+<p>量化投资 https://www.xuetangx.com/course/cufeP0251202310101/29602463</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../investment/trade/summary/three-year-summary.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../../investment/read/intro.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../investment/trade/summary/three-year-summary.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../../investment/read/intro.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../../../mermaid.min.js"></script>
+        <script type="text/javascript" src="../../../mermaid-init.js"></script>
+        <script type="text/javascript" src="../../../smart-anchor.js"></script>
+        <script src="https://utteranc.es/client.js"
+        repo="RustMagazine/rust_magazine_2021"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+
+    </body>
+</html>
