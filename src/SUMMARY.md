@@ -12,7 +12,10 @@
     - [交易记录](investment/trade/trade-record.md)
     - [投资总结](investment/trade/summary.md)
       - [2024-2026这三年](investment/trade/summary/three-year-summary.md)
+      - [投资杂记](investment/trade/summary/journal.md)
   - [投资阅读](investment/read/intro.md)
+    - [读书](investment/read/books/intro.md)
+      - [笔记杂记](investment/read/books/journal.md)
     - [证券市场周刊](investment/read/weeklyonstock.md)
       - [2026年10月17日-第40期-总3090期](investment/read/weeklyonstock-3090.md)
 
